@@ -1,0 +1,3 @@
+#!/bin/sh
+G_DEBUG=fatal-warnings ./check-program --sm-disable
+
