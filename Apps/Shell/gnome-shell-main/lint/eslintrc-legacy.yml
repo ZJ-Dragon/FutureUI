@@ -1,0 +1,24 @@
+rules:
+  eqeqeq: off
+  indent:
+    - error
+    - 4
+    - ignoredNodes:
+      - 'CallExpression[callee.object.name=GObject][callee.property.name=registerClass] > ClassExpression:first-child'
+      CallExpression:
+        arguments: first
+  jsdoc/check-alignment: off
+  jsdoc/check-param-names: off
+  jsdoc/check-tag-names: off
+  jsdoc/check-types: off
+  jsdoc/implements-on-classes: off
+  jsdoc/newline-after-description: off
+  jsdoc/require-jsdoc: off
+  jsdoc/require-param: off
+  jsdoc/require-param-description: off
+  jsdoc/require-param-name: off
+  jsdoc/require-param-type: off
+  object-curly-spacing:
+    - error
+    - always
+  quotes: off

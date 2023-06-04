@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="ExtensionRow" parent="GtkListBoxRow">
+    <style>
+      <class name="extension"/>
+    </style>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkBox">
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="hexpand">true</property>
+                <style>
+                  <class name="information"/>
+                </style>
+                <child>
+                  <object class="GtkBox">
+                    <style>
+                      <class name="header"/>
+                    </style>
+                    <child>
+                      <object class="GtkLabel" id="nameLabel">
+                        <property name="xalign">0</property>
+                        <style>
+                          <class name="title"/>
+                        </style>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="versionLabel">
+                        <property name="visible">false</property>
+                        <property name="xalign">0</property>
+                        <property name="yalign">1</property>
+                        <style>
+                          <class name="caption"/>
+                          <class name="dim-label"/>
+                        </style>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <style>
+                          <class name="status"/>
+                        </style>
+                        <child>
+                          <object class="GtkImage" id="errorIcon">
+                            <property name="visible">false</property>
+                            <property name="icon-name">dialog-error-symbolic</property>
+                            <property name="tooltip-text" translatable="yes">The extension had an error</property>
+                            <style>
+                              <class name="error"/>
+                            </style>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkImage" id="updatesIcon">
+                            <property name="visible">false</property>
+                            <property name="icon-name">software-update-available-symbolic</property>
+                            <property name="tooltip-text" translatable="yes">The extension can be updated</property>
+                            <style>
+                              <class name="warning"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="descriptionLabel">
+                    <property name="xalign">0</property>
+                    <property name="ellipsize">end</property>
+                    <style>
+                      <class name="subtitle"/>
+                    </style>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="errorLabel">
+                    <property name="visible">false</property>
+                    <property name="selectable">true</property>
+                    <property name="wrap">True</property>
+                    <property name="xalign">0</property>
+                    <style>
+                      <class name="caption"/>
+                      <class name="error"/>
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSwitch" id="switch">
+                <property name="valign">center</property>
+                <property name="action-name">row.enabled</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkCenterBox" id="actionsBox">
+            <style>
+              <class name="actions"/>
+            </style>
+            <child type="start">
+              <object class="GtkBox">
+                <child>
+                  <object class="GtkButton" id="websiteButton">
+                    <property name="label" translatable="yes">Website</property>
+                    <property name="action-name">row.show-url</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="prefsButton">
+                    <property name="visible"
+                              bind-source="prefsButton"
+                              bind-property="sensitive"
+                              bind-flags="sync-create"/>
+                    <property name="label" translatable="yes">Settings</property>
+                    <property name="action-name">row.show-prefs</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child type="end">
+              <object class="GtkButton" id="removeButton">
+                <property name="visible"
+                          bind-source="removeButton"
+                          bind-property="sensitive"
+                          bind-flags="sync-create"/>
+                <property name="label" translatable="yes">Remove…</property>
+                <property name="action-name">row.uninstall</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

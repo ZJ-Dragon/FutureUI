@@ -1,0 +1,32 @@
+rules:
+  camelcase:
+    - error
+    - properties: never
+      allow: [^vfunc_, ^on_]
+  consistent-return: error
+  eqeqeq:
+    - error
+    - smart
+  key-spacing:
+    - error
+    - mode: minimum
+      beforeColon: false
+      afterColon: true
+  prefer-arrow-callback: error
+
+overrides:
+  - files: js/**
+    excludedFiles:
+      - js/portalHelper/*
+      - js/misc/extensionUtils.js
+    globals:
+      global: readonly
+      _: readonly
+      C_: readonly
+      N_: readonly
+      ngettext: readonly
+  - files: subprojects/extensions-app/js/**
+    globals:
+      _: readonly
+      C_: readonly
+      N_: readonly
