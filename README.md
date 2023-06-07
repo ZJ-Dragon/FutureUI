@@ -1,5 +1,5 @@
 # FutureUI
-A UI and apps for [DragonOS](https://github.com/ZJ-Dragon/DragonOS).
+A UI and apps for [DragonOS](https://github.com/ZJ-Dragon/DragonOS).  
 为[DragonOS](https://github.com/ZJ-Dragon/DragonOS)提供的UI和应用程序。
 
 ---
