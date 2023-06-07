@@ -1,0 +1,946 @@
+# Swedish translation for gnome-firmware.
+# Copyright © 2022, 2023 gnome-firmware's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-firmware package.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2022, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-firmware master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/gnome-firmware/issues\n"
+"POT-Creation-Date: 2023-02-15 13:58+0000\n"
+"PO-Revision-Date: 2023-02-15 15:33+0100\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. TRANSLATORS: the application name
+#. window title
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:8
+#: data/org.gnome.Firmware.desktop.in:3 src/gfu-main.ui:73
+msgid "Firmware"
+msgstr "Firmware"
+
+#. TRANSLATORS: one-line description for the app
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:10
+#: data/org.gnome.Firmware.desktop.in:4 src/gfu-main.c:1425
+msgid "Install firmware on devices"
+msgstr "Installera fast programvara på enheter"
+
+#. TRANSLATORS: AppData description marketing paragraph
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:13
+msgid "Update, reinstall and downgrade firmware on devices supported by fwupd."
+msgstr ""
+"Uppdatera, installera om och nedgradera fast programvara på enheter som "
+"stöds av fwupd."
+
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:20
+msgid "Devices panel"
+msgstr "Enhetspanel"
+
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:24
+msgid "Releases panel"
+msgstr "Utgåvepanel"
+
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:28
+msgid "Richard Hughes"
+msgstr "Richard Hughes"
+
+#. TRANSLATORS: these are desktop keywords - remember the trailing ';' :)
+#: data/org.gnome.Firmware.desktop.in:12
+msgid "Firmware;"
+msgstr "Firmware;Fast programvara;"
+
+#. TRANSLATORS: We verified the payload against the server
+#: src/gfu-common.c:144
+msgid "Trusted payload"
+msgstr "Betrodd nyttolast"
+
+#. TRANSLATORS: We verified the meatdata against the server
+#: src/gfu-common.c:148
+msgid "Trusted metadata"
+msgstr "Betrodda metadata"
+
+#. TRANSLATORS: version is newer
+#: src/gfu-common.c:152
+msgid "Is upgrade"
+msgstr "Är uppgradering"
+
+#. TRANSLATORS: version is older
+#: src/gfu-common.c:156
+msgid "Is downgrade"
+msgstr "Är nedgradering"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:160
+msgid "Blocked version"
+msgstr "Blockerad version"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:164
+msgid "Not approved"
+msgstr "Inte godkänd"
+
+#. TRANSLATORS: is not the main firmware stream
+#: src/gfu-common.c:168
+msgid "Alternate branch"
+msgstr "Alternativ gren"
+
+#. TRANSLATORS: is not supported by the vendor
+#: src/gfu-common.c:173
+msgid "Community supported"
+msgstr "Stöds av gemenskapen"
+
+#. TRANSLATORS: Device cannot be removed easily
+#: src/gfu-common.c:299
+msgid "Internal device"
+msgstr "Intern enhet"
+
+#. TRANSLATORS: Device is updatable in this or any other mode
+#: src/gfu-common.c:303
+msgid "Updatable"
+msgstr "Uppdateringsbar"
+
+#. TRANSLATORS: Update can only be done from offline mode
+#: src/gfu-common.c:307
+msgid "Update requires a reboot"
+msgstr "Uppdatering kräver en omstart"
+
+#. TRANSLATORS: Must be plugged in to an outlet
+#: src/gfu-common.c:311
+msgid "System requires external power source"
+msgstr "Systemet kräver extern strömkälla"
+
+#. TRANSLATORS: Is locked and can be unlocked
+#: src/gfu-common.c:315
+msgid "Device is locked"
+msgstr "Enhet är låst"
+
+#. TRANSLATORS: Is found in current metadata
+#: src/gfu-common.c:319
+msgid "Supported on LVFS"
+msgstr "Stöds på LVFS"
+
+#. TRANSLATORS: Requires a bootloader mode to be manually enabled by the user
+#: src/gfu-common.c:323
+msgid "Requires a bootloader"
+msgstr "Kräver en starthanterare"
+
+#. TRANSLATORS: Requires a reboot to apply firmware or to reload hardware
+#: src/gfu-common.c:327
+msgid "Needs a reboot after installation"
+msgstr "Kräver en omstart efter installation"
+
+#. TRANSLATORS: Requires system shutdown to apply firmware
+#: src/gfu-common.c:331
+msgid "Needs shutdown after installation"
+msgstr "Kräver en nedstängning efter installation"
+
+#. TRANSLATORS: Has been reported to a metadata server
+#: src/gfu-common.c:335
+msgid "Reported to LVFS"
+msgstr "Rapporterat till LVFS"
+
+#. TRANSLATORS: User has been notified
+#: src/gfu-common.c:339
+msgid "User has been notified"
+msgstr "Användare har aviserats"
+
+#. TRANSLATORS: Install composite firmware on the parent before the child
+#: src/gfu-common.c:347
+msgid "Install to parent device first"
+msgstr "Installera först på föräldraenhet"
+
+#. TRANSLATORS: Is currently in bootloader mode
+#: src/gfu-common.c:351
+msgid "Is in bootloader mode"
+msgstr "Är i starthanterarläge"
+
+#. TRANSLATORS: The hardware is waiting to be replugged
+#: src/gfu-common.c:355
+msgid "Hardware is waiting to be replugged"
+msgstr "Hårdvara väntar på att bli utdragen/återinsatt"
+
+#. TRANSLATORS: Ignore validation safety checks when flashing this device
+#: src/gfu-common.c:359
+msgid "Ignore validation safety checks"
+msgstr "Ignorera säkerhetskontroller för giltighet"
+
+#. TRANSLATORS: Device update needs to be separately activated
+#: src/gfu-common.c:371
+msgid "Device update needs activation"
+msgstr "Enhetsuppdatering kräver aktivering"
+
+#. TRANSLATORS: Device will not return after update completes
+#: src/gfu-common.c:387
+msgid "Device will not re-appear after update completes"
+msgstr ""
+"Enhet kommer inte att dyka upp igen efter att uppdateringen färdigställs"
+
+#. TRANSLATORS: Device supports some form of checksum verification
+#: src/gfu-common.c:391
+msgid "Cryptographic hash verification is available"
+msgstr "Kryptografisk hashverifiering är tillgänglig"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:399
+msgid "Device stages updates"
+msgstr "Enhet genomför uppdatering i steg"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:403
+msgid "Device can recover flash failures"
+msgstr "Enhet kan återhämta sig från flashningsfel"
+
+#. TRANSLATORS: Device remains usable during update
+#: src/gfu-common.c:407
+msgid "Device is usable for the duration of the update"
+msgstr "Enhet går använda under tiden som uppdateringen pågår"
+
+#. TRANSLATORS: Device does not jump directly to the newest
+#: src/gfu-common.c:411
+msgid "Device installs all intermediate releases"
+msgstr "Enhet installerar alla mellanliggande utgåvor"
+
+#. TRANSLATORS: Device does not restart and requires a manual action
+#: src/gfu-common.c:415
+msgid "Device skips restart"
+msgstr "Enhet hoppar över omstart"
+
+#. TRANSLATORS: the stream can be provided by different vendors
+#: src/gfu-common.c:419
+msgid "Device supports switching to a different stream of firmware"
+msgstr "Enhet stöder byte till en annan ström av fast programvara"
+
+#. TRANSLATORS: it is saved to the users local disk
+#: src/gfu-common.c:423
+msgid "Device firmware will be saved before installing updates"
+msgstr ""
+"Enhetens fasta programvara kommer sparas innan uppdateringar installeras"
+
+#. TRANSLATORS: on some systems certain devices have to have matching versions,
+#. * e.g. the EFI driver for a given network card cannot be different
+#: src/gfu-common.c:429
+msgid "All devices of the same type will be updated at the same time"
+msgstr "Alla enheter av samma typ kommer uppdateras samtidigt"
+
+#. TRANSLATORS: some devices can only be updated to a new semver and cannot
+#. * be downgraded or reinstalled with the sexisting version
+#: src/gfu-common.c:436
+msgid "Only version upgrades are allowed"
+msgstr "Endast versionsuppgraderingar är tillåtna"
+
+#. TRANSLATORS: the device is currently unreachable, perhaps because it is in a
+#. * lower power state or is out of wireless range
+#: src/gfu-common.c:443
+msgid "Device is currently unreachable"
+msgstr "Enheten kan för närvarande inte nås"
+
+#. TRANSLATORS: a volume with full-disk-encryption was found on this machine,
+#. * typically a Windows NTFS partition with BitLocker
+#: src/gfu-common.c:450
+msgid "May invalidate secrets used to decrypt volumes"
+msgstr "Kan göra hemligheter som används för kryptering av volymer ogiltiga"
+
+#. TRANSLATORS: the vendor is no longer supporting the device
+#: src/gfu-common.c:456
+msgid "End of life"
+msgstr "Har nått slutet på sin livstid"
+
+#. TRANSLATORS: firmware is verified on-device the payload using strong crypto
+#: src/gfu-common.c:462
+msgid "Signed payload"
+msgstr "Signerad nyttolast"
+
+#. TRANSLATORS: firmware payload is unsigned and it is possible to modify it
+#: src/gfu-common.c:468
+msgid "Unsigned payload"
+msgstr "Osignerad nyttolast"
+
+#. TRANSLATORS: this device is not actually real
+#: src/gfu-common.c:474
+msgid "Emulated"
+msgstr "Emulerad"
+
+#. TRANSLATORS: we're saving all USB events for emulation
+#: src/gfu-common.c:480
+msgid "Tagged for emulation"
+msgstr "Taggad för emulering"
+
+#. TRANSLATORS: daemon is inactive
+#: src/gfu-common.c:597
+msgid "Idle…"
+msgstr "Inaktiv…"
+
+#. TRANSLATORS: decompressing the firmware file
+#: src/gfu-common.c:601
+msgid "Decompressing…"
+msgstr "Dekomprimerar…"
+
+#. TRANSLATORS: parsing the firmware information
+#: src/gfu-common.c:605
+msgid "Loading…"
+msgstr "Läser in…"
+
+#. TRANSLATORS: restarting the device to pick up new F/W
+#: src/gfu-common.c:609
+msgid "Restarting device…"
+msgstr "Startar om enhet…"
+
+#. TRANSLATORS: reading from the flash chips
+#: src/gfu-common.c:613
+msgid "Reading…"
+msgstr "Läser…"
+
+#. TRANSLATORS: writing to the flash chips
+#: src/gfu-common.c:617
+msgid "Writing…"
+msgstr "Skriver…"
+
+#. TRANSLATORS: erasing contents of the flash chips
+#: src/gfu-common.c:621
+msgid "Erasing…"
+msgstr "Raderar…"
+
+#. TRANSLATORS: verifying we wrote the firmware correctly
+#: src/gfu-common.c:625
+msgid "Verifying…"
+msgstr "Verifierar…"
+
+#. TRANSLATORS: scheduing an update to be done on the next boot
+#: src/gfu-common.c:629
+msgid "Scheduling…"
+msgstr "Schemalägger…"
+
+#. TRANSLATORS: downloading from a remote server
+#: src/gfu-common.c:633
+msgid "Downloading…"
+msgstr "Hämtar…"
+
+#. TRANSLATORS: waiting for user to authenticate
+#: src/gfu-common.c:637
+msgid "Authenticating…"
+msgstr "Autentiserar…"
+
+#. TRANSLATORS: waiting for device to do something
+#: src/gfu-common.c:641
+msgid "Waiting…"
+msgstr "Väntar…"
+
+#. TRANSLATORS: waiting for daemon
+#: src/gfu-common.c:645
+msgid "Shutting down…"
+msgstr "Stänger ner…"
+
+#. TRANSLATORS: the attestation failed
+#: src/gfu-main.c:248
+msgid "Not OK"
+msgstr "Inte OK"
+
+#. TRANSLATORS: the checksum verified
+#: src/gfu-main.c:253 src/gfu-main.c:1082
+msgid "OK"
+msgstr "OK"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:265
+msgid "System power is too low to perform the update"
+msgstr "Systemet har för lite batteri för att utföra uppdateringen"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:269
+#, c-format
+msgid "System power is too low to perform the update (%u%%, requires %u%%)"
+msgstr ""
+"Systemet har för lite batteri för att utföra uppdateringen (%u%%, behöver "
+"%u%%)"
+
+#. TRANSLATORS: for example, a Bluetooth mouse that is in powersave mode
+#: src/gfu-main.c:275
+msgid "Device is unreachable, or out of wireless range"
+msgstr "Enheten kan inte nås, eller är utanför den trådlösa räckvidden"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:282
+msgid "Device battery power is too low"
+msgstr "Enheten har för lite batteri"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:285
+#, c-format
+msgid "Device battery power is too low (%u%%, requires %u%%)"
+msgstr "Enheten har för lite batteri (%u%%, behöver %u%%)"
+
+#. TRANSLATORS: usually this is when we're waiting for a reboot
+#: src/gfu-main.c:291
+msgid "Device is waiting for the update to be applied"
+msgstr "Enheten väntar på att uppdateringen ska tillämpas"
+
+#. TRANSLATORS: as in, wired mains power for a laptop
+#: src/gfu-main.c:295
+msgid "Device requires AC power to be connected"
+msgstr "Enheten behöver vara ansluten till nätspänning"
+
+#. TRANSLATORS: lid means "laptop top cover"
+#: src/gfu-main.c:299
+msgid "Device cannot be used while the lid is closed"
+msgstr "Enheten kan inte användas medan locket är stängt"
+
+#. TRANSLATORS: the hw IDs the device defines,
+#. * e.g. USB:0x1234
+#: src/gfu-main.c:402
+msgid "Vendor ID"
+msgid_plural "Vendor IDs"
+msgstr[0] "Tillverkar-ID"
+msgstr[1] "Tillverkar-ID"
+
+#. TRANSLATORS: the checksum state was unknown
+#: src/gfu-main.c:432
+msgid "Unknown"
+msgstr "Okänt"
+
+#. TRANSLATORS: error in shutting down the system
+#: src/gfu-main.c:511
+msgid "Failed to shutdown device"
+msgstr "Misslyckades med att stänga ner enhet"
+
+#: src/gfu-main.c:512
+msgid "A manual shutdown is required."
+msgstr "En manuell nedstängning krävs."
+
+#. TRANSLATORS: error in rebooting down the system
+#: src/gfu-main.c:527
+msgid "Failed to reboot device"
+msgstr "Misslyckades med att starta om enhet"
+
+#: src/gfu-main.c:528
+msgid "A manual reboot is required."
+msgstr "En manuell omstart krävs."
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:547
+msgid "Failed to load list of remotes"
+msgstr "Misslyckades med att läsa in listan över fjärrkällor"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:639
+msgid "Failed to load device list"
+msgstr "Misslyckades med att läsa in enhetslista"
+
+#. TRANSLATORS: no devices supporting firmware updates were found
+#: src/gfu-main.c:668
+msgid "No supported devices were found…"
+msgstr "Inga enheter som stöds hittades…"
+
+#. TRANSLATORS: the list of available firmware failed to be updated
+#: src/gfu-main.c:770
+msgid "Failed to refresh metadata"
+msgstr "Misslyckades med att uppdatera metadata"
+
+#. TRANSLATORS: the LVFS remote was not found on the system
+#: src/gfu-main.c:785
+msgid "Failed to find LVFS"
+msgstr "Misslyckades med att hitta LVFS"
+
+#. TRANSLATORS: the LVFS remote could not be enabled
+#: src/gfu-main.c:803
+msgid "Failed to enable LVFS"
+msgstr "Misslyckades med att aktivera LVFS"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:844
+msgid "Failed to get remotes list"
+msgstr "Misslyckades med att erhålla listan över fjärrkällor"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:881
+msgid "To complete the update further action is required"
+msgstr "Vidare åtgärd krävs för att slutföra uppdateringen"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:884
+msgid "Action is required"
+msgstr "Åtgärd krävs"
+
+#. TRANSLATORS: the firmware install failed for an unspecified reason
+#: src/gfu-main.c:985
+msgid "Failed to install firmware"
+msgstr "Misslyckades med att installera fast programvara"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1009
+msgid "The update requires the system to shutdown to complete."
+msgstr "Uppdateringen kräver att systemet stängs ned för att slutföras."
+
+#: src/gfu-main.c:1012 src/gfu-main.c:1687
+msgid "Shutdown now?"
+msgstr "Stäng ner nu?"
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1025
+msgid "The update requires a reboot to complete."
+msgstr "Uppdateringen kräver en omstart för att slutföras."
+
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1028 src/gfu-main.c:1705
+msgid "Restart now?"
+msgstr "Starta om nu?"
+
+#. TRANSLATORS: inform the user that the
+#. installation was successful onto the device
+#: src/gfu-main.c:1042
+msgid "Installation successful"
+msgstr "Installationen lyckades"
+
+#. TRANSLATORS: dialog text, %1 is a
+#. * version number, %2 is a device name
+#: src/gfu-main.c:1046
+#, c-format
+msgid "Installed firmware version %s on %s."
+msgstr "Installerade fast programvaruversion %s på %s."
+
+#. TRANSLATORS: e.g. bitlocker
+#: src/gfu-main.c:1081
+msgid "Full disk encryption detected"
+msgstr "Full diskkryptering upptäckt"
+
+#. TRANSLATORS: buttons
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1083 src/gfu-main.c:1127 src/gfu-main.c:1188
+msgid "Cancel"
+msgstr "Avbryt"
+
+#. TRANSLATORS: the platform secret is stored in the PCRx registers on the TPM
+#: src/gfu-main.c:1089
+msgid ""
+"Some of the platform secrets may be invalidated when updating this firmware."
+msgstr ""
+"Några av plattformshemligheterna kan göras ogiltiga när denna fasta "
+"programvara uppdateras."
+
+#. TRANSLATORS: 'recovery key' here refers to a code, rather than a metal thing
+#: src/gfu-main.c:1091
+msgid "Please ensure you have the volume recovery key before continuing."
+msgstr "Se till att du har volymåterställningsnyckeln innan du fortsätter."
+
+#. TRANSLATORS: title, %1 is the firmware vendor, %2 is the
+#. device vendor name
+#: src/gfu-main.c:1110
+#, c-format
+msgid "The firmware from %s is not supplied by %s"
+msgstr "Den fasta programvaran från %s tillhandahålls inte av %s"
+
+#. TRANSLATORS: branch switch title
+#: src/gfu-main.c:1115
+msgid "The firmware is not supplied by the vendor"
+msgstr "Den fasta programvaran stöds inte av tillverkaren"
+
+#. TRANSLATORS: button text to switch to another stream of firmware
+#: src/gfu-main.c:1129
+msgid "Switch Branch"
+msgstr "Byt gren"
+
+#. TRANSLATORS: %1 is the device vendor name
+#: src/gfu-main.c:1134
+#, c-format
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with %s."
+msgstr ""
+"Din hårdvara kan skadas med den här fasta programvaran och att installera "
+"denna utgåva kan ogiltigförklara all garanti hos %s."
+
+#. TRANSLATORS: the vendor is unknown
+#: src/gfu-main.c:1141
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with the vendor."
+msgstr ""
+"Din hårdvara kan skadas med den här fasta programvaran och att installera "
+"denna utgåva kan ogiltigförklara all garanti hos tillverkaren."
+
+#. TRANSLATORS: should the branch be changed
+#: src/gfu-main.c:1148
+msgid "You must understand the consequences of changing the firmware branch."
+msgstr "Du måste förstå konsekvenserna av att byta gren av fast programvara."
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1168
+#, c-format
+msgid "Reinstall %s firmware version %s"
+msgstr "Återinstallera %s, fast programvaruversion %s"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1171
+#, c-format
+msgid "Upgrade %s firmware version %s"
+msgstr "Uppgradera %s, fast programvaruversion %s"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1174
+#, c-format
+msgid "Downgrade %s firmware version %s"
+msgstr "Nedgradera %s, fast programvaruversion %s"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1177
+#, c-format
+msgid "Install %s firmware version %s"
+msgstr "Installera %s, fast programvaruversion %s"
+
+#. TRANSLATORS: button text: install the same version again
+#. TRANSLATORS: installing the same firmware that is
+#. * currently installed
+#: src/gfu-main.c:1193 src/gfu-release-row.c:64
+msgid "Reinstall"
+msgstr "Installera om"
+
+#. TRANSLATORS: button text, move from old -> new
+#. TRANSLATORS: upgrading the firmware
+#: src/gfu-main.c:1199 src/gfu-release-row.c:57
+msgid "Upgrade"
+msgstr "Uppgradera"
+
+#. TRANSLATORS: button text, move from new -> old
+#. TRANSLATORS: downgrading the firmware
+#: src/gfu-main.c:1203 src/gfu-release-row.c:60
+msgid "Downgrade"
+msgstr "Nedgradera"
+
+#. TRANSLATORS: the device can be used normallly
+#: src/gfu-main.c:1211
+msgid "The device will remain usable for the duration of the update"
+msgstr "Enhet kommer gå använda under tiden som uppdateringen pågår"
+
+#. TRANSLATORS: the device will be non-fuctional for a while
+#: src/gfu-main.c:1217
+msgid "The device will be unusable while the update is installing"
+msgstr "Enhet kommer inte gå använda under tiden som uppdateringen pågår"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1292
+msgid "Failed to verify firmware"
+msgstr "Misslyckades med att verifiera fast programvara"
+
+#. TRANSLATORS: inform the user that the
+#. firmware verification was successful
+#: src/gfu-main.c:1303
+msgid "Verification succeeded"
+msgstr "Verifiering lyckades"
+
+#. TRANSLATORS: firmware is cryptographically identical
+#: src/gfu-main.c:1307
+#, c-format
+msgid "%s firmware checksums matched"
+msgstr "kontrollsummor för fast programvara för %s matchade"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1339
+msgid "Verify firmware checksums?"
+msgstr "Verifiera kontrollsummor för fast programvara?"
+
+#. TRANSLATORS: device will "go away" and then "come back"
+#: src/gfu-main.c:1344
+msgid "The device may be unusable during this action"
+msgstr "Enhet kommer kanske inte gå använda under denna åtgärd"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1357
+msgid "Failed to update checksums"
+msgstr "Misslyckades med att uppdatera kontrollsummor"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1388
+msgid "Update cryptographic hash"
+msgstr "Uppdatera kryptografisk hash"
+
+#. TRANSLATORS: save what we have now as "valid"
+#: src/gfu-main.c:1393
+msgid "Record current device cryptographic hashes as verified?"
+msgstr "Lagra aktuell enhets kryptografiska hashsummor som verifierade?"
+
+#. TRANSLATORS: the title of the about window
+#: src/gfu-main.c:1417
+msgid "About GNOME Firmware"
+msgstr "Om GNOME Firmware"
+
+#. TRANSLATORS: the application name for the about UI
+#. TRANSLATORS: command description
+#: src/gfu-main.c:1420 src/gfu-main.c:1925
+msgid "GNOME Firmware"
+msgstr "GNOME Firmware"
+
+#. TRANSLATORS: you can put your name here :)
+#: src/gfu-main.c:1434
+msgid "translator-credits"
+msgstr ""
+"Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"\n"
+"Skicka synpunkter på översättningen till\n"
+"<tp-sv@listor.tp-sv.se>."
+
+#: src/gfu-main.c:1480
+msgid "Category"
+msgid_plural "Categories"
+msgstr[0] "Kategori"
+msgstr[1] "Kategorier"
+
+#. title: hashes of the file payload
+#: src/gfu-main.c:1499 src/gfu-main.ui:672
+msgid "Checksum"
+msgid_plural "Checksums"
+msgstr[0] "Kontrollsumma"
+msgstr[1] "Kontrollsummor"
+
+#. TRANSLATORS: list of security issues, e.g. CVEs
+#: src/gfu-main.c:1517
+msgid "Fixed Issue"
+msgid_plural "Fixed Issues"
+msgstr[0] "Fixade problem"
+msgstr[1] "Fixade problem"
+
+#. TRANSLATORS: as in non-free
+#: src/gfu-main.c:1555
+msgid "Proprietary"
+msgstr "Proprietär"
+
+#. TRANSLATORS: maybe try Linux?
+#: src/gfu-main.c:1646 src/gfu-main.c:1759
+msgid "The fwupd service is not available for your OS."
+msgstr "fwupd-tjänsten är inte tillgänglig för ditt OS."
+
+#. TRANSLATORS: unlock means to make the device functional in another mode
+#: src/gfu-main.c:1670
+msgid "Failed to unlock device"
+msgstr "Misslyckades med att låsa upp enhet"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1684
+msgid "Unlocking a device requires the system to shutdown to complete."
+msgstr ""
+"Att låsa upp en enhet kräver att systemet stängs ned för att färdigställas."
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1701
+msgid "Unlocking a device requires a reboot to complete."
+msgstr "Att låsa upp en enhet kräver en omstart för att färdigställas."
+
+#. TRANSLATORS: command line option
+#: src/gfu-main.c:1914
+msgid "Show extra debugging information"
+msgstr "Visa extra felsökningsinformation"
+
+#. TRANSLATORS: the user has sausages for fingers
+#: src/gfu-main.c:1929
+msgid "Failed to parse command line options"
+msgstr "Misslyckades med att tolka kommandoradsflaggor"
+
+#. window title
+#: src/gfu-main.ui:19
+msgid "Devices"
+msgstr "Enheter"
+
+#. LVFS is an online firmware provider
+#: src/gfu-main.ui:98
+msgid "LVFS is not enabled"
+msgstr "LVFS är inte aktiverat"
+
+#. we need metadata so we know where to get the firmware from
+#: src/gfu-main.ui:108
+msgid ""
+"Firmware metadata can be obtained from the Linux Vendor Firmware Service at "
+"no cost."
+msgstr ""
+"Metadata för fast programvara kan hämtas gratis från Linux Vendor Firmware "
+"Service."
+
+#. button text
+#: src/gfu-main.ui:119
+msgid "Enable"
+msgstr "Aktivera"
+
+#. group title
+#: src/gfu-main.ui:150
+msgid "Device Properties"
+msgstr "Enhetsegenskaper"
+
+#. title: device version
+#: src/gfu-main.ui:155
+msgid "Current Version"
+msgstr "Aktuell version"
+
+#. title: if the device is locked
+#: src/gfu-main.ui:165
+msgid "Lock Status"
+msgstr "Låsstatus"
+
+#. title: the lowest version we can update to
+#: src/gfu-main.ui:176
+msgid "Minimum Version"
+msgstr "Minimiversion"
+
+#. title: the version of the [read only] bootloader
+#: src/gfu-main.ui:186
+msgid "Bootloader Version"
+msgstr "Starthanterarversion"
+
+#. title: device manufacturer
+#. title: manufacturer that supplied the file
+#: src/gfu-main.ui:196 src/gfu-main.ui:530
+msgid "Vendor"
+msgstr "Tillverkare"
+
+#. title: firmware stream, e.g. coreboot
+#: src/gfu-main.ui:206
+msgid "Branch"
+msgstr "Gren"
+
+#. title: ime in seconds to update
+#. title: time to deploy this specific update
+#: src/gfu-main.ui:226 src/gfu-main.ui:632
+msgid "Install Duration"
+msgstr "Installationstid"
+
+#. title: how many times the device can be updated
+#: src/gfu-main.ui:236
+msgid "Flashes Left"
+msgstr "Flashningar kvar"
+
+#. title: the error text from las time
+#: src/gfu-main.ui:246
+msgid "Update Error"
+msgstr "Uppdateringsfel"
+
+#. title: problems why we can't use the device
+#: src/gfu-main.ui:262
+msgid "Problems"
+msgstr "Problem"
+
+#. title: device unique ID
+#: src/gfu-main.ui:278
+msgid "Serial Number"
+msgstr "Serienummer"
+
+#. title: if we can verify the firmware
+#: src/gfu-main.ui:288
+msgid "Attestation"
+msgstr "Attestering"
+
+#. button: save as trusted
+#: src/gfu-main.ui:305
+msgid "_Store"
+msgstr "_Lagra"
+
+#. button: verify the checksum
+#: src/gfu-main.ui:319
+msgid "_Verify"
+msgstr "_Verifiera"
+
+#. title: there is firmware we can install
+#: src/gfu-main.ui:361
+msgid "Available Releases"
+msgstr "Utgåvor tillgängliga"
+
+#. title: there are no releases to install
+#: src/gfu-main.ui:377
+msgid "No Releases Available"
+msgstr "Inga utgåvor tillgängliga"
+
+#. title: when starting
+#: src/gfu-main.ui:390
+msgid "Loading"
+msgstr "Läser in"
+
+#. more information about when we're loading
+#: src/gfu-main.ui:406
+msgid "Loading devices…"
+msgstr "Läser in enheter…"
+
+#. title: no devices could be found we can update
+#: src/gfu-main.ui:422
+msgid "No Devices"
+msgstr "Inga enheter"
+
+#. title: one line
+#: src/gfu-main.ui:497
+msgid "Summary"
+msgstr "Sammanfattning"
+
+#. title: multiple lines of prose
+#: src/gfu-main.ui:512
+msgid "Description"
+msgstr "Beskrivning"
+
+#. title: what we are downloading
+#: src/gfu-main.ui:540
+msgid "Filename"
+msgstr "Filnamn"
+
+#. title: size in bytes
+#: src/gfu-main.ui:558
+msgid "Size"
+msgstr "Storlek"
+
+#. title: method of doing the update, e.g. DFU
+#: src/gfu-main.ui:568
+msgid "Protocol"
+msgstr "Protokoll"
+
+#. title: the nice name of the firmware remote
+#: src/gfu-main.ui:581
+msgid "Remote ID"
+msgstr "Fjärr-ID"
+
+#. title: the ID to identify the stream
+#: src/gfu-main.ui:594
+msgid "AppStream ID"
+msgstr "AppStream-ID"
+
+#. title, e.g. Nonfree, GPLv2+ etc
+#: src/gfu-main.ui:612
+msgid "License"
+msgstr "Licens"
+
+#. title: Information about the release, e.g. is-signed
+#: src/gfu-main.ui:622
+msgid "Flags"
+msgstr "Flaggor"
+
+#. title: any message we show the user after the update is done
+#: src/gfu-main.ui:642
+msgid "Update Message"
+msgstr "Uppdateringsmeddelande"
+
+#. title: the type of firmware, e.g. X-ManagementEngine
+#: src/gfu-main.ui:652
+msgid "Categories"
+msgstr "Kategorier"
+
+#. title: list of security issues, e.g. CVE numbers
+#: src/gfu-main.ui:662
+msgid "Issues"
+msgstr "Problem"
+
+#. menu-text: download a new copy of the firmware metadata
+#: src/gfu-main.ui:703
+msgid "_Refresh Metadata"
+msgstr "_Uppdatera metadata"
+
+#. menu-text: select and install a local file
+#: src/gfu-main.ui:707
+msgid "_Install Firmware Archive"
+msgstr "_Installera fast programvaruarkiv"
+
+#. menu-text: shows information about this ap
+#: src/gfu-main.ui:711
+msgid "_About"
+msgstr "_Om"
+
+#. TRANSLATORS: problems are things the user has to fix, e.g. low battery
+#: src/gfu-release-row.c:75
+msgid "Cannot perform action as the device has a problem"
+msgstr "Kan inte utföra åtgärden då enheten har ett problem"

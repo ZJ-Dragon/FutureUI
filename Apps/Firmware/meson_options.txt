@@ -1,0 +1,5 @@
+option('consolekit', type : 'boolean', value : true, description : 'enable ConsoleKit support')
+option('systemd', type : 'boolean', value : true, description : 'enable systemd support')
+option('man', type : 'boolean', value : true, description : 'enable man pages')
+option('elogind', type : 'boolean', value : false, description : 'enable elogind support')
+option('devel', type : 'boolean', value : false, description : 'development build')

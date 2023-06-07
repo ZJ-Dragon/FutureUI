@@ -1,0 +1,956 @@
+# Georgian translation for gnome-firmware.
+# Copyright (C) 2023, gnome-firmware's authors.
+# This file is distributed under the same license as the gnome-firmware package.
+# Ekaterine Papava <papava.e@gtu.ge>, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/gnome-firmware/issues\n"
+"POT-Creation-Date: 2023-05-22 07:44+0000\n"
+"PO-Revision-Date: 2023-05-22 18:35+0200\n"
+"Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
+"Language-Team: \n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#. TRANSLATORS: the application name
+#. window title
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:8
+#: data/org.gnome.Firmware.desktop.in:3 src/gfu-main.ui:73
+msgid "Firmware"
+msgstr "მიკროკოდი"
+
+#. TRANSLATORS: one-line description for the app
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:10
+#: data/org.gnome.Firmware.desktop.in:4 src/gfu-main.c:1431
+msgid "Install firmware on devices"
+msgstr "მოწყობილობებზე მიკროკოდის დაყენება"
+
+#. TRANSLATORS: AppData description marketing paragraph
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:13
+msgid "Update, reinstall and downgrade firmware on devices supported by fwupd."
+msgstr ""
+"Fwupd-ის მიერ მხარდაჭერილ მოწყობილობებზე მიკროკოდის განახლება, გადაყენება და "
+"და ვერსიის დაწევა."
+
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:20
+msgid "Devices panel"
+msgstr "მოწყობილობების პანელი"
+
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:24
+msgid "Releases panel"
+msgstr "რელიზების პანელი"
+
+#: data/appdata/org.gnome.Firmware.metainfo.xml.in:28
+msgid "Richard Hughes"
+msgstr "Richard Hughes"
+
+#. TRANSLATORS: these are desktop keywords - remember the trailing ';' :)
+#: data/org.gnome.Firmware.desktop.in:12
+msgid "Firmware;"
+msgstr "მიკროკოდი;"
+
+#. TRANSLATORS: We verified the payload against the server
+#: src/gfu-common.c:144
+msgid "Trusted payload"
+msgstr "სანდო დატვირთვა"
+
+#. TRANSLATORS: We verified the meatdata against the server
+#: src/gfu-common.c:148
+msgid "Trusted metadata"
+msgstr "სანდო მეტამონაცემები"
+
+#. TRANSLATORS: version is newer
+#: src/gfu-common.c:152
+msgid "Is upgrade"
+msgstr "გაუმჯობესდება"
+
+#. TRANSLATORS: version is older
+#: src/gfu-common.c:156
+msgid "Is downgrade"
+msgstr "ვერსია ჩამოიწევა"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:160
+msgid "Blocked version"
+msgstr "დაბლოკილი ვერსია"
+
+#. TRANSLATORS: version cannot be installed due to policy
+#: src/gfu-common.c:164
+msgid "Not approved"
+msgstr "ნებადაურთველი"
+
+#. TRANSLATORS: is not the main firmware stream
+#: src/gfu-common.c:168
+msgid "Alternate branch"
+msgstr "ალტერნატიული ბრენჩი"
+
+#. TRANSLATORS: is not supported by the vendor
+#: src/gfu-common.c:173
+msgid "Community supported"
+msgstr "საზგადოების მიერ მხარდაჭერილი"
+
+#. TRANSLATORS: the QA team is someone we trust
+#: src/gfu-common.c:179
+msgid "Report is trusted"
+msgstr "ანგარიში სანდოა"
+
+#. TRANSLATORS: Device cannot be removed easily
+#: src/gfu-common.c:305
+msgid "Internal device"
+msgstr "შიდა მოწყობილობა"
+
+#. TRANSLATORS: Device is updatable in this or any other mode
+#: src/gfu-common.c:309
+msgid "Updatable"
+msgstr "განახლებადი"
+
+#. TRANSLATORS: Update can only be done from offline mode
+#: src/gfu-common.c:313
+msgid "Update requires a reboot"
+msgstr "განახლება გადატვირთვას საჭიროებს"
+
+#. TRANSLATORS: Must be plugged in to an outlet
+#: src/gfu-common.c:317
+msgid "System requires external power source"
+msgstr "სისტემას კვების გარე წყარო ესაჭიროება"
+
+#. TRANSLATORS: Is locked and can be unlocked
+#: src/gfu-common.c:321
+msgid "Device is locked"
+msgstr "მოწყობილობა ჩაკეტილია"
+
+#. TRANSLATORS: Is found in current metadata
+#: src/gfu-common.c:325
+msgid "Supported on LVFS"
+msgstr "მხარდაჭერილია LVFS-ზე"
+
+#. TRANSLATORS: Requires a bootloader mode to be manually enabled by the user
+#: src/gfu-common.c:329
+msgid "Requires a bootloader"
+msgstr "საჭიროებს ჩამტვირთავ კოდს"
+
+#. TRANSLATORS: Requires a reboot to apply firmware or to reload hardware
+#: src/gfu-common.c:333
+msgid "Needs a reboot after installation"
+msgstr "დაყენების შემდეგ საჭიროებს გადატვირთვას"
+
+#. TRANSLATORS: Requires system shutdown to apply firmware
+#: src/gfu-common.c:337
+msgid "Needs shutdown after installation"
+msgstr "დაყენების შემდეგ საჭიროებს გამორთვას"
+
+#. TRANSLATORS: Has been reported to a metadata server
+#: src/gfu-common.c:341
+msgid "Reported to LVFS"
+msgstr "გაგზავნილია LVFS-თან"
+
+#. TRANSLATORS: User has been notified
+#: src/gfu-common.c:345
+msgid "User has been notified"
+msgstr "მომხმარებელი გაფრთხილებულია"
+
+#. TRANSLATORS: Install composite firmware on the parent before the child
+#: src/gfu-common.c:353
+msgid "Install to parent device first"
+msgstr "ჯერ მშობელ მოწყობილობაზე დაყენება"
+
+#. TRANSLATORS: Is currently in bootloader mode
+#: src/gfu-common.c:357
+msgid "Is in bootloader mode"
+msgstr "ჩამტვირთავი კოდის რეჟიმშია"
+
+#. TRANSLATORS: The hardware is waiting to be replugged
+#: src/gfu-common.c:361
+msgid "Hardware is waiting to be replugged"
+msgstr "აპარატურა თავიდან შეერთებას ელოდება"
+
+#. TRANSLATORS: Ignore validation safety checks when flashing this device
+#: src/gfu-common.c:365
+msgid "Ignore validation safety checks"
+msgstr "დადასტურების შემოწმების ტესტების იგნორი"
+
+#. TRANSLATORS: Device update needs to be separately activated
+#: src/gfu-common.c:377
+msgid "Device update needs activation"
+msgstr "მოწყობილობის განახლებას აქტივაცია ესაჭიროება"
+
+#. TRANSLATORS: Device will not return after update completes
+#: src/gfu-common.c:393
+msgid "Device will not re-appear after update completes"
+msgstr "განახლების დასრულების შემდეგ მოწყობილობა აღარ გამოჩნდება"
+
+#. TRANSLATORS: Device supports some form of checksum verification
+#: src/gfu-common.c:397
+msgid "Cryptographic hash verification is available"
+msgstr "ხელმისაწვდომია ჰეშის კრიპტოგრაფიული შემოწმება"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:405
+msgid "Device stages updates"
+msgstr "მოწყობილობის დონის განახლება"
+
+#. TRANSLATORS: Device supports a safety mechanism for flashing
+#: src/gfu-common.c:409
+msgid "Device can recover flash failures"
+msgstr "მოწყობილობას შეუძლია ფლეშის ავარიის გადატანა"
+
+#. TRANSLATORS: Device remains usable during update
+#: src/gfu-common.c:413
+msgid "Device is usable for the duration of the update"
+msgstr "მოწყობილობა განახლების დროსაც გამოყენებადია"
+
+#. TRANSLATORS: Device does not jump directly to the newest
+#: src/gfu-common.c:417
+msgid "Device installs all intermediate releases"
+msgstr "მოწყობილობა ყველა შუალედურ რელიზსაც აყენებს"
+
+#. TRANSLATORS: Device does not restart and requires a manual action
+#: src/gfu-common.c:421
+msgid "Device skips restart"
+msgstr "მოწყობილობა გამოტოვებს გადატვირთვას"
+
+#. TRANSLATORS: the stream can be provided by different vendors
+#: src/gfu-common.c:425
+msgid "Device supports switching to a different stream of firmware"
+msgstr "მოწყობილობას აქვს განახლებების სხვა არხზე გადართვის საშუალება"
+
+#. TRANSLATORS: it is saved to the users local disk
+#: src/gfu-common.c:429
+msgid "Device firmware will be saved before installing updates"
+msgstr "განახლების დაყენებამდე მიმდინარე მიკროკოდი შენახული იქნება"
+
+#. TRANSLATORS: on some systems certain devices have to have matching versions,
+#. * e.g. the EFI driver for a given network card cannot be different
+#: src/gfu-common.c:435
+msgid "All devices of the same type will be updated at the same time"
+msgstr "ერთი ტიპის მოწყობილობების ერთდროულად განახლდება"
+
+#. TRANSLATORS: some devices can only be updated to a new semver and cannot
+#. * be downgraded or reinstalled with the sexisting version
+#: src/gfu-common.c:442
+msgid "Only version upgrades are allowed"
+msgstr "დაშვებულია მხოლოდ ვერსიების განახლება"
+
+#. TRANSLATORS: the device is currently unreachable, perhaps because it is in a
+#. * lower power state or is out of wireless range
+#: src/gfu-common.c:449
+msgid "Device is currently unreachable"
+msgstr "მოწყობილობა ამჟამად მიუწვდომელია"
+
+#. TRANSLATORS: a volume with full-disk-encryption was found on this machine,
+#. * typically a Windows NTFS partition with BitLocker
+#: src/gfu-common.c:456
+msgid "May invalidate secrets used to decrypt volumes"
+msgstr "შესაძლოა დაიკარგოს დისკის გაშიფვრის გასაღებები"
+
+#. TRANSLATORS: the vendor is no longer supporting the device
+#: src/gfu-common.c:462
+msgid "End of life"
+msgstr "მხარდაჭერის ვადაამოწურული"
+
+#. TRANSLATORS: firmware is verified on-device the payload using strong crypto
+#: src/gfu-common.c:468
+msgid "Signed payload"
+msgstr "ხელმოწერილი დატვირთვა"
+
+#. TRANSLATORS: firmware payload is unsigned and it is possible to modify it
+#: src/gfu-common.c:474
+msgid "Unsigned payload"
+msgstr "ხელმოუწერელი დატვირთვა"
+
+#. TRANSLATORS: this device is not actually real
+#: src/gfu-common.c:480
+msgid "Emulated"
+msgstr "ემულირებული"
+
+#. TRANSLATORS: we're saving all USB events for emulation
+#: src/gfu-common.c:486
+msgid "Tagged for emulation"
+msgstr "მონიშნული ემულაციისთვის"
+
+#. TRANSLATORS: daemon is inactive
+#: src/gfu-common.c:603
+msgid "Idle…"
+msgstr "უქმე…"
+
+#. TRANSLATORS: decompressing the firmware file
+#: src/gfu-common.c:607
+msgid "Decompressing…"
+msgstr "გაშლა…"
+
+#. TRANSLATORS: parsing the firmware information
+#: src/gfu-common.c:611
+msgid "Loading…"
+msgstr "იტვირთება…"
+
+#. TRANSLATORS: restarting the device to pick up new F/W
+#: src/gfu-common.c:615
+msgid "Restarting device…"
+msgstr "მოწყობილობის გადატვირთვა…"
+
+#. TRANSLATORS: reading from the flash chips
+#: src/gfu-common.c:619
+msgid "Reading…"
+msgstr "წაკითხვა…"
+
+#. TRANSLATORS: writing to the flash chips
+#: src/gfu-common.c:623
+msgid "Writing…"
+msgstr "ჩაწერა…"
+
+#. TRANSLATORS: erasing contents of the flash chips
+#: src/gfu-common.c:627
+msgid "Erasing…"
+msgstr "წაშლა…"
+
+#. TRANSLATORS: verifying we wrote the firmware correctly
+#: src/gfu-common.c:631
+msgid "Verifying…"
+msgstr "შემოწმება…"
+
+#. TRANSLATORS: scheduing an update to be done on the next boot
+#: src/gfu-common.c:635
+msgid "Scheduling…"
+msgstr "რიგში ჩაყენება…"
+
+#. TRANSLATORS: downloading from a remote server
+#: src/gfu-common.c:639
+msgid "Downloading…"
+msgstr "გადმოწერა…"
+
+#. TRANSLATORS: waiting for user to authenticate
+#: src/gfu-common.c:643
+msgid "Authenticating…"
+msgstr "ავთენტიკაცია…"
+
+#. TRANSLATORS: waiting for device to do something
+#: src/gfu-common.c:647
+msgid "Waiting…"
+msgstr "მოლოდინი…"
+
+#. TRANSLATORS: waiting for daemon
+#: src/gfu-common.c:651
+msgid "Shutting down…"
+msgstr "გამორთვა…"
+
+#. TRANSLATORS: the attestation failed
+#: src/gfu-main.c:248
+msgid "Not OK"
+msgstr "ცუდი შედეგი"
+
+#. TRANSLATORS: the checksum verified
+#: src/gfu-main.c:253 src/gfu-main.c:1088
+msgid "OK"
+msgstr "დიახ"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:265
+msgid "System power is too low to perform the update"
+msgstr "სისტემის კვების სიმძლავრე განახლებისთვის მეტისმეტად დაბალია"
+
+#. TRANSLATORS: as in laptop battery power
+#: src/gfu-main.c:269
+#, c-format
+msgid "System power is too low to perform the update (%u%%, requires %u%%)"
+msgstr ""
+"სისტემის კვების სიმძლავრე განახლებისთვის მეტისმეტად დაბალია(%u%%, საჭიროა "
+"%u%%)"
+
+#. TRANSLATORS: for example, a Bluetooth mouse that is in powersave mode
+#: src/gfu-main.c:275
+msgid "Device is unreachable, or out of wireless range"
+msgstr ""
+"მოწყობილობა მიუწვდომელია ან გასულია უსადენო ინტერნეტის წვდომის არეალიდან"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:282
+msgid "Device battery power is too low"
+msgstr "მოწყობილობის ელემენტის სიმძლავრე მეტისმეტად დაბალია"
+
+#. TRANSLATORS: for example the batteries *inside* the Bluetooth mouse
+#: src/gfu-main.c:285
+#, c-format
+msgid "Device battery power is too low (%u%%, requires %u%%)"
+msgstr ""
+"მოწყობილობის ელემენტის სიმძლავრე მეტისმეტად დაბალია(%u%%, საჭიროა %u%%)"
+
+#. TRANSLATORS: usually this is when we're waiting for a reboot
+#: src/gfu-main.c:291
+msgid "Device is waiting for the update to be applied"
+msgstr "მოწყობილობა განახლების დასრულებას ელოდება"
+
+#. TRANSLATORS: as in, wired mains power for a laptop
+#: src/gfu-main.c:295
+msgid "Device requires AC power to be connected"
+msgstr "მოწყობილობას ესაჭიროება 220V კვება"
+
+#. TRANSLATORS: lid means "laptop top cover"
+#: src/gfu-main.c:299
+msgid "Device cannot be used while the lid is closed"
+msgstr "მოწყობილობას ვერ გამოიყენებთ, თუ ის დახურულია"
+
+#. TRANSLATORS: device cannot be interrupted, for instance taking a phone call
+#: src/gfu-main.c:304
+msgid "Device is in use"
+msgstr "მოწყობილობა გამოიყენება"
+
+#. TRANSLATORS: the hw IDs the device defines,
+#. * e.g. USB:0x1234
+#: src/gfu-main.c:408
+msgid "Vendor ID"
+msgid_plural "Vendor IDs"
+msgstr[0] "Vendor ID"
+
+#. TRANSLATORS: the checksum state was unknown
+#: src/gfu-main.c:438
+msgid "Unknown"
+msgstr "უცნობი"
+
+#. TRANSLATORS: error in shutting down the system
+#: src/gfu-main.c:517
+msgid "Failed to shutdown device"
+msgstr "მოწყობილობის გამორთვის შეცდომა"
+
+#: src/gfu-main.c:518
+msgid "A manual shutdown is required."
+msgstr "საჭიროა ხელით გამორთვა."
+
+#. TRANSLATORS: error in rebooting down the system
+#: src/gfu-main.c:533
+msgid "Failed to reboot device"
+msgstr "მოწყობილობის გადატვირთვის შეცდომა"
+
+#: src/gfu-main.c:534
+msgid "A manual reboot is required."
+msgstr "საჭიროა ხელით გადატვირთვა."
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:553
+msgid "Failed to load list of remotes"
+msgstr "დაშორებული მოწყობილობების სიის ჩატვირთვის შეცდომა"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:645
+msgid "Failed to load device list"
+msgstr "მოწყობილობების სიის ჩატვირთვის სეცდომა"
+
+#. TRANSLATORS: no devices supporting firmware updates were found
+#: src/gfu-main.c:674
+msgid "No supported devices were found…"
+msgstr "მხარდაჭერილი მოწყობილობები ნაპოვნი არაა…"
+
+#. TRANSLATORS: the list of available firmware failed to be updated
+#: src/gfu-main.c:776
+msgid "Failed to refresh metadata"
+msgstr "მეტამონაცემების განახლების შეცდომა"
+
+#. TRANSLATORS: the LVFS remote was not found on the system
+#: src/gfu-main.c:791
+msgid "Failed to find LVFS"
+msgstr "LVFS-ის პოვნის შეცდომა"
+
+#. TRANSLATORS: the LVFS remote could not be enabled
+#: src/gfu-main.c:809
+msgid "Failed to enable LVFS"
+msgstr "LVFS-ის ჩართვის სეცდომა"
+
+#. TRANSLATORS: fwupd refused us data
+#: src/gfu-main.c:850
+msgid "Failed to get remotes list"
+msgstr "დაშორებულების სიის მიღების შეცდომა"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:887
+msgid "To complete the update further action is required"
+msgstr "განახლების დასასრულებლად საჭიროა დამატებითი ქმედებები"
+
+#. TRANSLATORS: the user needs to do something, e.g. remove the device
+#: src/gfu-main.c:890
+msgid "Action is required"
+msgstr "საჭიროა ქმედება"
+
+#. TRANSLATORS: the firmware install failed for an unspecified reason
+#: src/gfu-main.c:991
+msgid "Failed to install firmware"
+msgstr "მიკროკოდის დაყენების შეცდომა"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1015
+msgid "The update requires the system to shutdown to complete."
+msgstr "განახლებისთვის საჭიროა სისტემის გამორთვის დასრულება."
+
+#: src/gfu-main.c:1018 src/gfu-main.c:1693
+msgid "Shutdown now?"
+msgstr "გამოვრთო ახლა?"
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1031
+msgid "The update requires a reboot to complete."
+msgstr "განახლებისთვის საჭიროა გადატვირთვის დასრულება."
+
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1034 src/gfu-main.c:1711
+msgid "Restart now?"
+msgstr "გადავტვირთო ახლა?"
+
+#. TRANSLATORS: inform the user that the
+#. installation was successful onto the device
+#: src/gfu-main.c:1048
+msgid "Installation successful"
+msgstr "დაყენება წარმატებულია"
+
+#. TRANSLATORS: dialog text, %1 is a
+#. * version number, %2 is a device name
+#: src/gfu-main.c:1052
+#, c-format
+msgid "Installed firmware version %s on %s."
+msgstr "დაყენებული მიკროკოდის ვერსია %s: %s."
+
+#. TRANSLATORS: e.g. bitlocker
+#: src/gfu-main.c:1087
+msgid "Full disk encryption detected"
+msgstr "ნაპოვნია დისკის სრული დაშიფვრა"
+
+#. TRANSLATORS: buttons
+#. TRANSLATORS: button text
+#: src/gfu-main.c:1089 src/gfu-main.c:1133 src/gfu-main.c:1194
+msgid "Cancel"
+msgstr "გაუქმება"
+
+#. TRANSLATORS: the platform secret is stored in the PCRx registers on the TPM
+#: src/gfu-main.c:1095
+msgid ""
+"Some of the platform secrets may be invalidated when updating this firmware."
+msgstr ""
+"ამ მიკროკოდის განახლებისას შეილება პლატფორმის ზოგიერი საიდუმლო დაიკარგოს."
+
+#. TRANSLATORS: 'recovery key' here refers to a code, rather than a metal thing
+#: src/gfu-main.c:1097
+msgid "Please ensure you have the volume recovery key before continuing."
+msgstr ""
+"გაგრძელების წინ დარწმუნდით, რომ ტომის აღდგენის გასაღები ნამდვილად გაქვთ."
+
+#. TRANSLATORS: title, %1 is the firmware vendor, %2 is the
+#. device vendor name
+#: src/gfu-main.c:1116
+#, c-format
+msgid "The firmware from %s is not supplied by %s"
+msgstr "მიკროკოდი %s-დან არაა მოწოდებული %s-ის მიერ"
+
+#. TRANSLATORS: branch switch title
+#: src/gfu-main.c:1121
+msgid "The firmware is not supplied by the vendor"
+msgstr "მიკროკოდი არაა შექმნილი მომწოდებლის მიერ"
+
+#. TRANSLATORS: button text to switch to another stream of firmware
+#: src/gfu-main.c:1135
+msgid "Switch Branch"
+msgstr "ბრენჩის გადართვა"
+
+#. TRANSLATORS: %1 is the device vendor name
+#: src/gfu-main.c:1140
+#, c-format
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with %s."
+msgstr ""
+"ამ მიკროკოდით თქვენი აპარატურა შეიძლება დაზიანდეს. ამავე დროს ამ რელიზის "
+"დაყენებამ შეიძლება %s-ზე გარანტია მოგიხსნათ."
+
+#. TRANSLATORS: the vendor is unknown
+#: src/gfu-main.c:1147
+msgid ""
+"Your hardware may be damaged using this firmware, and installing this "
+"release may void any warranty with the vendor."
+msgstr ""
+"ამ მიკროკოდით თქვენი აპარატურა შეიძლება დაზიანდეს. ამავე დროს ამ რელიზის "
+"დაყენებამ შეიძლება გარანტია მოგიხსნან."
+
+#. TRANSLATORS: should the branch be changed
+#: src/gfu-main.c:1154
+msgid "You must understand the consequences of changing the firmware branch."
+msgstr "მიკროკოდის ბრენჩის შეცვლის რისკები კარგად უნდა გესმოდეთ."
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1174
+#, c-format
+msgid "Reinstall %s firmware version %s"
+msgstr "%s-ზე მიკროკოდის ვერსიის %s თავიდან დაყენება"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1177
+#, c-format
+msgid "Upgrade %s firmware version %s"
+msgstr "%s-ზე მიკროკოდის ვერსიის %s განახლება"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1180
+#, c-format
+msgid "Downgrade %s firmware version %s"
+msgstr "%s-ზე მიკროკოდის ვერსიის %s ვერსიის ჩამოწევა"
+
+#. TRANSLATORS: %1 is device name, %2 is the version
+#: src/gfu-main.c:1183
+#, c-format
+msgid "Install %s firmware version %s"
+msgstr "%s-ზე მიკროკოდის ვერსიის %s დაყენება"
+
+#. TRANSLATORS: button text: install the same version again
+#. TRANSLATORS: installing the same firmware that is
+#. * currently installed
+#: src/gfu-main.c:1199 src/gfu-release-row.c:64
+msgid "Reinstall"
+msgstr "თავიდან დაყენება"
+
+#. TRANSLATORS: button text, move from old -> new
+#. TRANSLATORS: upgrading the firmware
+#: src/gfu-main.c:1205 src/gfu-release-row.c:57
+msgid "Upgrade"
+msgstr "განახლება"
+
+#. TRANSLATORS: button text, move from new -> old
+#. TRANSLATORS: downgrading the firmware
+#: src/gfu-main.c:1209 src/gfu-release-row.c:60
+msgid "Downgrade"
+msgstr "ვერსიის ჩამოწევა"
+
+#. TRANSLATORS: the device can be used normallly
+#: src/gfu-main.c:1217
+msgid "The device will remain usable for the duration of the update"
+msgstr "მოწყობილობა განახლების დროსაც გამოყენებადია"
+
+#. TRANSLATORS: the device will be non-fuctional for a while
+#: src/gfu-main.c:1223
+msgid "The device will be unusable while the update is installing"
+msgstr "განახლების დროს მოწყობილობას ვერ გამოიყენებთ"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1298
+msgid "Failed to verify firmware"
+msgstr "მიკროკოდის შემოწმების შეცდომა"
+
+#. TRANSLATORS: inform the user that the
+#. firmware verification was successful
+#: src/gfu-main.c:1309
+msgid "Verification succeeded"
+msgstr "შემოწმება წარმატებულია"
+
+#. TRANSLATORS: firmware is cryptographically identical
+#: src/gfu-main.c:1313
+#, c-format
+msgid "%s firmware checksums matched"
+msgstr "%s-ის მიკროკოდის საკონტროლო ჯამები ემთხვევა"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1345
+msgid "Verify firmware checksums?"
+msgstr "შევამოწმო მიკროკოდის საკონტროლო ჯამები?"
+
+#. TRANSLATORS: device will "go away" and then "come back"
+#: src/gfu-main.c:1350
+msgid "The device may be unusable during this action"
+msgstr "ამ ქმედების დროს მოწყობილობას ვერ გამოიყენებთ"
+
+#. TRANSLATORS: verify means checking the actual checksum of the firmware
+#: src/gfu-main.c:1363
+msgid "Failed to update checksums"
+msgstr "საკონტროლო ჯამების განახლების შეცდომა"
+
+#. TRANSLATORS: dialog title
+#: src/gfu-main.c:1394
+msgid "Update cryptographic hash"
+msgstr "კრიპტოგრაფიული ჰეშის განახლება"
+
+#. TRANSLATORS: save what we have now as "valid"
+#: src/gfu-main.c:1399
+msgid "Record current device cryptographic hashes as verified?"
+msgstr ""
+"ჩავიწერო მიმდინარე მოწყობილობის კრიპტოგრაფიული ჰეშები, როგორც შემოწმებული?"
+
+#. TRANSLATORS: the title of the about window
+#: src/gfu-main.c:1423
+msgid "About GNOME Firmware"
+msgstr "GNOME Firmware-ის შესახებ"
+
+#. TRANSLATORS: the application name for the about UI
+#. TRANSLATORS: command description
+#: src/gfu-main.c:1426 src/gfu-main.c:1931
+msgid "GNOME Firmware"
+msgstr "GNOME Firmware"
+
+#. TRANSLATORS: you can put your name here :)
+#: src/gfu-main.c:1440
+msgid "translator-credits"
+msgstr "თემური დოღონაძე"
+
+#: src/gfu-main.c:1486
+msgid "Category"
+msgid_plural "Categories"
+msgstr[0] "კატეგორია"
+
+#. title: hashes of the file payload
+#: src/gfu-main.c:1505 src/gfu-main.ui:672
+msgid "Checksum"
+msgid_plural "Checksums"
+msgstr[0] "საკონტროლო რიცხვი"
+
+#. TRANSLATORS: list of security issues, e.g. CVEs
+#: src/gfu-main.c:1523
+msgid "Fixed Issue"
+msgid_plural "Fixed Issues"
+msgstr[0] "შესწორებული შეცდომა"
+
+#. TRANSLATORS: as in non-free
+#: src/gfu-main.c:1561
+msgid "Proprietary"
+msgstr "დახურული კოდი"
+
+#. TRANSLATORS: maybe try Linux?
+#: src/gfu-main.c:1652 src/gfu-main.c:1765
+msgid "The fwupd service is not available for your OS."
+msgstr "Fwupd-ის სერვისი თქვენი ოს-ისთვის მიუწვდომელია."
+
+#. TRANSLATORS: unlock means to make the device functional in another mode
+#: src/gfu-main.c:1676
+msgid "Failed to unlock device"
+msgstr "მოწყობილობის განბლოკვის შეცდომა"
+
+#. TRANSLATORS: prompting a shutdown to the user
+#: src/gfu-main.c:1690
+msgid "Unlocking a device requires the system to shutdown to complete."
+msgstr "მოწყობილობის განბლოკვისთვის საჭიროა სისტემის გამორთვის დასრულება."
+
+#. TRANSLATORS: prompting a reboot to the user
+#: src/gfu-main.c:1707
+msgid "Unlocking a device requires a reboot to complete."
+msgstr "მოწყობილობის განბლოკვისთვის საჭიროა გადატვირთვის დასრულება."
+
+#. TRANSLATORS: command line option
+#: src/gfu-main.c:1920
+msgid "Show extra debugging information"
+msgstr "გამართვის დამატებითი ინფორმაციის ჩვენება"
+
+#. TRANSLATORS: the user has sausages for fingers
+#: src/gfu-main.c:1935
+msgid "Failed to parse command line options"
+msgstr "ბრძანებების სტრიქონის პარამეტრების დამუშავების შეცდომა"
+
+#. window title
+#: src/gfu-main.ui:19
+msgid "Devices"
+msgstr "მოწყობილობები"
+
+#. LVFS is an online firmware provider
+#: src/gfu-main.ui:98
+msgid "LVFS is not enabled"
+msgstr "LVFS-ი ჩართული არაა"
+
+#. we need metadata so we know where to get the firmware from
+#: src/gfu-main.ui:108
+msgid ""
+"Firmware metadata can be obtained from the Linux Vendor Firmware Service at "
+"no cost."
+msgstr ""
+"მიკროკოდის მეტამონაცემების მიღება Linux Vendor Firmware Service-ზე უფასოდ "
+"შეგიძლიათ."
+
+#. button text
+#: src/gfu-main.ui:119
+msgid "Enable"
+msgstr "ჩართვა"
+
+#. group title
+#: src/gfu-main.ui:150
+msgid "Device Properties"
+msgstr "მოწყობილობის თვისებები"
+
+#. title: device version
+#: src/gfu-main.ui:155
+msgid "Current Version"
+msgstr "მიმდინარე ვერსია"
+
+#. title: if the device is locked
+#: src/gfu-main.ui:165
+msgid "Lock Status"
+msgstr "ჩაკეტვის სტატუსი"
+
+#. title: the lowest version we can update to
+#: src/gfu-main.ui:176
+msgid "Minimum Version"
+msgstr "მინიმალური ვერსია"
+
+#. title: the version of the [read only] bootloader
+#: src/gfu-main.ui:186
+msgid "Bootloader Version"
+msgstr "ჩამტვირთავი კოდის ვერსია"
+
+#. title: device manufacturer
+#. title: manufacturer that supplied the file
+#: src/gfu-main.ui:196 src/gfu-main.ui:530
+msgid "Vendor"
+msgstr "მომწოდებელი"
+
+#. title: firmware stream, e.g. coreboot
+#: src/gfu-main.ui:206
+msgid "Branch"
+msgstr "ბრენჩი"
+
+#. title: ime in seconds to update
+#. title: time to deploy this specific update
+#: src/gfu-main.ui:226 src/gfu-main.ui:632
+msgid "Install Duration"
+msgstr "დაყენების დრო"
+
+#. title: how many times the device can be updated
+#: src/gfu-main.ui:236
+msgid "Flashes Left"
+msgstr "დარჩენილი ჩაწერები"
+
+#. title: the error text from las time
+#: src/gfu-main.ui:246
+msgid "Update Error"
+msgstr "განახლების შეცდომა"
+
+#. title: problems why we can't use the device
+#: src/gfu-main.ui:262
+msgid "Problems"
+msgstr "პრობლემები"
+
+#. title: device unique ID
+#: src/gfu-main.ui:278
+msgid "Serial Number"
+msgstr "სერიული ნომერი"
+
+#. title: if we can verify the firmware
+#: src/gfu-main.ui:288
+msgid "Attestation"
+msgstr "ატესტაცია"
+
+#. button: save as trusted
+#: src/gfu-main.ui:305
+msgid "_Store"
+msgstr "_დამახსოვრება"
+
+#. button: verify the checksum
+#: src/gfu-main.ui:319
+msgid "_Verify"
+msgstr "_შემოწმება"
+
+#. title: there is firmware we can install
+#: src/gfu-main.ui:361
+msgid "Available Releases"
+msgstr "ხელმისაწვდომი რელიზები"
+
+#. title: there are no releases to install
+#: src/gfu-main.ui:377
+msgid "No Releases Available"
+msgstr "რელიზების გარეშე"
+
+#. title: when starting
+#: src/gfu-main.ui:390
+msgid "Loading"
+msgstr "ჩატვირთვა"
+
+#. more information about when we're loading
+#: src/gfu-main.ui:406
+msgid "Loading devices…"
+msgstr "მოწყობილობების ჩატვირთვა…"
+
+#. title: no devices could be found we can update
+#: src/gfu-main.ui:422
+msgid "No Devices"
+msgstr "მოწყობილობების გარეშე"
+
+#. title: one line
+#: src/gfu-main.ui:497
+msgid "Summary"
+msgstr "შეჯამება"
+
+#. title: multiple lines of prose
+#: src/gfu-main.ui:512
+msgid "Description"
+msgstr "დახასიათება"
+
+#. title: what we are downloading
+#: src/gfu-main.ui:540
+msgid "Filename"
+msgstr "ფაილის სახელი"
+
+#. title: size in bytes
+#: src/gfu-main.ui:558
+msgid "Size"
+msgstr "ზომა"
+
+#. title: method of doing the update, e.g. DFU
+#: src/gfu-main.ui:568
+msgid "Protocol"
+msgstr "პროტოკოლი"
+
+#. title: the nice name of the firmware remote
+#: src/gfu-main.ui:581
+msgid "Remote ID"
+msgstr "დაშორებულის ID"
+
+#. title: the ID to identify the stream
+#: src/gfu-main.ui:594
+msgid "AppStream ID"
+msgstr "AppStream ID"
+
+#. title, e.g. Nonfree, GPLv2+ etc
+#: src/gfu-main.ui:612
+msgid "License"
+msgstr "ლიცენზია"
+
+#. title: Information about the release, e.g. is-signed
+#: src/gfu-main.ui:622
+msgid "Flags"
+msgstr "ალმები"
+
+#. title: any message we show the user after the update is done
+#: src/gfu-main.ui:642
+msgid "Update Message"
+msgstr "განახლების შეტყობინება"
+
+#. title: the type of firmware, e.g. X-ManagementEngine
+#: src/gfu-main.ui:652
+msgid "Categories"
+msgstr "კატეგო"
+
+#. title: list of security issues, e.g. CVE numbers
+#: src/gfu-main.ui:662
+msgid "Issues"
+msgstr "პრობლემები"
+
+#. menu-text: download a new copy of the firmware metadata
+#: src/gfu-main.ui:703
+msgid "_Refresh Metadata"
+msgstr "_მეტამონაცემების განახლება"
+
+#. menu-text: select and install a local file
+#: src/gfu-main.ui:707
+msgid "_Install Firmware Archive"
+msgstr "მიკროკოდის არქივის _დაყენება"
+
+#. menu-text: shows information about this ap
+#: src/gfu-main.ui:711
+msgid "_About"
+msgstr "_შესახებ"
+
+#. TRANSLATORS: problems are things the user has to fix, e.g. low battery
+#: src/gfu-release-row.c:75
+msgid "Cannot perform action as the device has a problem"
+msgstr ""
+"ქმედების შესრულება მაშინ, როცა მოწყობილობას პრობლემები აქვს, შეუძლებელია"
+
+#~ msgid "Plugin Defined"
+#~ msgstr "დამატების მიერ განსაზღვრული"
+
+#~ msgid "GUID"
+#~ msgid_plural "GUIDs"
+#~ msgstr[0] "GUID"

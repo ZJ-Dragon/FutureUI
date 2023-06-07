@@ -1,0 +1,33 @@
+fedora:
+  image: fedora:36
+
+  before_script:
+    - dnf -y update
+    - dnf -y install gcc meson gettext libxmlb-devel fwupd-devel gtk4-devel libappstream-glib-devel help2man libadwaita-devel
+
+  script:
+  - ./contrib/build.sh
+
+debian:
+  image: debian:testing
+
+  variables:
+    DEBIAN_FRONTEND: 'noninteractive'
+
+  before_script:
+  - ./contrib/debian_deps.sh
+
+  script:
+  - ./contrib/build.sh
+
+ubuntu:
+  image: ubuntu:devel
+
+  variables:
+    DEBIAN_FRONTEND: 'noninteractive'
+
+  before_script:
+  - ./contrib/debian_deps.sh
+
+  script:
+  - ./contrib/build.sh

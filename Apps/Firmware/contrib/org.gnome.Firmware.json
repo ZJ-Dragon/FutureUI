@@ -1,0 +1,101 @@
+{
+  "app-id" : "org.gnome.Firmware",
+  "sdk" : "org.gnome.Sdk",
+  "runtime" : "org.gnome.Platform",
+  "runtime-version" : "42",
+  "command" : "gnome-firmware",
+  "finish-args" : [
+    "--device=dri",
+    "--share=ipc",
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--share=network",
+    "--system-talk-name=org.freedesktop.login1",
+    "--system-talk-name=org.freedesktop.fwupd"
+  ],
+  "cleanup" : [
+    "/include",
+    "/lib/pkgconfig",
+    "/share/man"
+  ],
+  "modules" : [
+    {
+      "name" : "libxmlb",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Dintrospection=false",
+        "-Dgtkdoc=false",
+        "-Dtests=false",
+        "-Dstemmer=false",
+        "-Dcli=false",
+        "--sysconfdir=/app/etc",
+        "--localstatedir=/var/data"
+      ],
+      "sources" : [
+        {
+          "type" : "archive",
+          "url" : "https://people.freedesktop.org/~hughsient/releases/libxmlb-0.3.8.tar.xz",
+          "sha256" : "87d3729069bc74cc269549173a8fd798dae70bb05016a1353f66146725df0801"
+        }
+      ]
+    },
+    {
+      "name" : "libjcat",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Dintrospection=false",
+        "-Dgtkdoc=false",
+        "-Dtests=false",
+        "-Dcli=false",
+        "--sysconfdir=/app/etc",
+        "--localstatedir=/var/data"
+      ],
+      "sources" : [
+        {
+          "type" : "archive",
+          "url" : "https://people.freedesktop.org/~hughsient/releases/libjcat-0.1.11.tar.xz",
+          "sha256" : "305687815e97a384e2861a3038acadf11eb967402406799d17214be5dd4e1765"
+        }
+      ]
+    },
+    {
+      "name" : "fwupd",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Dbuild=library",
+        "-Dintrospection=false",
+        "-Dgusb=false",
+        "-Dlibarchive=false",
+        "-Dsoup_session_compat=false",
+        "-Dplugin_logitech_bulkcontroller=false",
+        "-Dplugin_msr=false",
+        "-Ddocs=none",
+        "-Dtests=false"
+      ],
+      "sources" : [
+        {
+          "type" : "archive",
+          "url" : "https://people.freedesktop.org/~hughsient/releases/fwupd-1.7.7.tar.xz",
+          "sha256" : "414994d3acdf674a90f70a2da16da4e176a5ad11fe636e6ab3f0e1a49e062969"
+        }
+      ]
+    },
+    {
+      "name" : "gnome-firmware",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Dman=false"
+      ],
+      "sources" : [
+        {
+          "type" : "git",
+          "url" : "https://gitlab.gnome.org/World/gnome-firmware.git",
+          "branch" : "master"
+        }
+      ]
+    }
+  ],
+  "build-options" : {
+    "env" : {    }
+  }
+}
