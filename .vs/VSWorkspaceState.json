@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Apps",
+    "\\UImaterials",
+    "\\UImaterials\\Backgrounds",
+    "\\UImaterials\\Icons"
   ],
-  "SelectedNode": "\\D:\\Develop\\FutureUI",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
