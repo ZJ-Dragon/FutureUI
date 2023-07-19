@@ -1,1 +1,0 @@
-../../../../meson/check-version.py

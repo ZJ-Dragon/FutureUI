@@ -1,5 +1,0 @@
-#!/bin/sh
-
-set -e
-
-scan-build -v --status-bugs -disable-checker unix.Malloc "$@"

@@ -1,9 +1,0 @@
-data/.osk-layout-workbench
-po/gnome-shell.pot
-*~
-*.patch
-*.sw?
-.buildconfig
-.eslintcache-legacy
-.eslintcache-regular
-.vscode

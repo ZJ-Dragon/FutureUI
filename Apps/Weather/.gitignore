@@ -1,5 +1,0 @@
-_build
-**/__pycache__
-.fenv/
-.flatpak-builder/
-.flatpak*/

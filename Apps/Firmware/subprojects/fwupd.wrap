@@ -1,4 +1,0 @@
-[wrap-git]
-directory = fwupd
-url = https://github.com/fwupd/fwupd.git
-revision = main

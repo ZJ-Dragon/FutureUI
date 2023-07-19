@@ -1,3 +1,0 @@
-#define ST_H_INSIDE 1
-@includes@
-#undef ST_H_INSIDE
