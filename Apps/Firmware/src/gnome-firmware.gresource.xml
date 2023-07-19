@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+ <gresource prefix="/org/gnome/Firmware">
+  <file compressed="true">gfu-main.ui</file>
+  <file compressed="true">gfu-device-row.ui</file>
+  <file compressed="true">gfu-release-row.ui</file>
+  <!-- private icons-->
+  <file preprocess="xml-stripblanks" alias="icons/scalable/devices/auth-otp-symbolic.svg">../data/resources/icons/devices/auth-otp-symbolic.svg</file>
+  <file preprocess="xml-stripblanks" alias="icons/scalable/devices/colorimeter-colorhug-symbolic.svg">../data/resources/icons/devices/colorimeter-colorhug-symbolic.svg</file>
+  <file preprocess="xml-stripblanks" alias="icons/scalable/devices/computer-chip-symbolic.svg">../data/resources/icons/devices/computer-chip-symbolic.svg</file>
+  <file preprocess="xml-stripblanks" alias="icons/scalable/devices/dock-symbolic.svg">../data/resources/icons/devices/dock-symbolic.svg</file>
+  <file preprocess="xml-stripblanks" alias="icons/scalable/devices/dock-usb-symbolic.svg">../data/resources/icons/devices/dock-usb-symbolic.svg</file>
+  <file preprocess="xml-stripblanks" alias="icons/scalable/devices/gpu-symbolic.svg">../data/resources/icons/devices/gpu-symbolic.svg</file>
+  <file preprocess="xml-stripblanks" alias="icons/scalable/devices/usb-hub-symbolic.svg">../data/resources/icons/devices/usb-hub-symbolic.svg</file>
+  <file preprocess="xml-stripblanks" alias="icons/scalable/devices/usb-receiver-symbolic.svg">../data/resources/icons/devices/usb-receiver-symbolic.svg</file>
+ </gresource>
+</gresources>

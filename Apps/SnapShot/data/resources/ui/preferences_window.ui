@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="PreferencesWindow" parent="AdwPreferencesWindow">
+    <property name="modal">True</property>
+    <property name="search-enabled">False</property>
+    <property name="default-height">240</property>
+    <property name="default-width">360</property>
+    <child>
+      <object class="AdwPreferencesPage">
+        <property name="title" translatable="yes">General</property>
+        <property name="icon-name">applications-system-symbolic</property>
+        <child>
+          <object class="AdwPreferencesGroup">
+            <child>
+              <object class="AdwSwitchRow">
+                <property name="title" translatable="yes">_Shutter Sound</property>
+                <property name="action-name">preferences-window.play-shutter-sound</property>
+                <property name="use-underline">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSwitchRow">
+                <property name="title" translatable="yes">_Composition Guidelines</property>
+                <property name="action-name">preferences-window.show-composition-guidelines</property>
+                <property name="use-underline">True</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

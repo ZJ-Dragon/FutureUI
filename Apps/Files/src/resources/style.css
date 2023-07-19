@@ -1,0 +1,279 @@
+/* Toolbar */
+
+@keyframes needs_attention_keyframes {
+  0% { }
+  10% { background-color: @accent_bg_color; border-radius: 999999px; }
+  100% { }
+}
+
+.nautilus-operations-button-needs-attention {
+  animation: needs_attention_keyframes 2s ease-in-out;
+}
+.nautilus-operations-button-needs-attention-multiple {
+  animation: needs_attention_keyframes 3s ease-in-out;
+  animation-iteration-count: 3;
+}
+
+/* Remove white background and highlight on hover which GTK adds by default
+ * to GtkListBox. TODO: Switch to GtkListView and drop this CSS hack. */
+.operations-list,
+.operations-list > :hover {
+  background: none;
+}
+
+/* Path bar */
+
+#NautilusPathBar {
+  background-color: alpha(currentColor, 0.1);
+  border-radius: 6px;
+}
+#NautilusPathBar > menubutton {
+  margin: 0px;
+}
+
+#NautilusPathBar > scrolledwindow undershoot.left {
+  background: linear-gradient(to right, @headerbar_shade_color 6px, alpha(@headerbar_shade_color, 0) 24px);
+  border-left: solid 1px @borders;
+}
+#NautilusPathBar > scrolledwindow undershoot.right {
+  background: linear-gradient(to left, @headerbar_shade_color 6px, alpha(@headerbar_shade_color, 0) 24px);
+  border-right: solid 1px @borders;
+}
+
+/* Match sidebar's rounded corners on the "start" side. */
+#NautilusPathBar > scrolledwindow:dir(ltr) undershoot.left {
+  border-radius: 6px 0px 0px 6px;
+}
+#NautilusPathBar > scrolledwindow:dir(rtl) undershoot.right {
+  border-radius: 0px 6px 6px 0px;
+}
+
+#NautilusPathButton {
+  margin: 3px;
+  border-radius: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#NautilusPathButton:not(:hover),
+#NautilusPathButton.current-dir
+{
+  background: none;
+}
+
+#NautilusPathButton:not(.current-dir):not(:backdrop):hover label,
+#NautilusPathButton:not(.current-dir):not(:backdrop):hover image {
+  opacity: 1;
+}
+
+/* Search bar */
+
+#NautilusQueryEditor > * {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#NautilusQueryEditorTag > button,
+#NautilusQueryEditor > menubutton > button {
+  min-width: 24px;
+  min-height: 24px;
+  margin: 0px;
+}
+
+#NautilusQueryEditorTag {
+  background-color: alpha(currentColor, 0.1);
+  border-radius: 100px;
+}
+
+/* Mimic the style of GtkEntry icons, but keep button background if pressed. */
+#NautilusQueryEditor > menubutton > button:not(:checked) {
+  background: none;
+}
+#NautilusQueryEditor > menubutton > button:not(:hover):not(:checked) {
+  opacity: 0.7;
+}
+
+/* Floating status bar */
+.floating-bar {
+  padding: 3px;
+  background-color: @view_bg_color;
+  box-shadow: 0 0 0 1px @borders;
+  border-radius: 8px 0 0 0;
+}
+
+.floating-bar.bottom.left { /* axes left border and border radius */
+  border-top-left-radius: 0;
+}
+.floating-bar.bottom.right { /* axes right border and border radius */
+  border-top-right-radius: 0;
+}
+
+.floating-bar:backdrop {
+  background-color: @view_bg_color;
+  border-color: @unfocused_borders;
+}
+
+.floating-bar button {
+  padding: 0px;
+}
+
+.disk-space-free {
+  color: alpha(currentColor, 0.15);
+}
+.disk-space-used {
+  color: @accent_bg_color;
+}
+
+.search-information {
+  background-color: @accent_bg_color;
+  color:white;
+  padding:2px;
+}
+
+.batch-rename-preview {
+  border-top: solid @borders 1px;
+}
+.conflict-row {
+    background: @warning_bg_color;
+    color: @warning_fg_color;
+}
+
+/* Grid view */
+.nautilus-grid-view gridview {
+  padding: 18px;
+  border-spacing: 6px;
+}
+
+.nautilus-grid-view gridview > child {
+  padding: 0px;
+  border-radius: 12px;
+}
+.nautilus-grid-view #NautilusViewCell {
+  padding: 6px;
+  border-radius: 12px;
+}
+
+/* Column view */
+
+/* Setup padding on the list. Horizontal padding must be set on the columnview
+ * for it to calculate column widths correctly. */
+.nautilus-list-view columnview {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.nautilus-list-view columnview > listview {
+  padding-top: 16px;
+  padding-bottom: 24px;
+  border-spacing: 8px;
+}
+
+.nautilus-list-view.compact columnview > listview {
+  border-spacing: 4px;
+}
+
+/* Use negative margins to extend rubberbanding area into the columnview's
+ * padding, then apply positive margin on rows to reestablish positioning. */
+.nautilus-list-view columnview > listview {
+  margin-left: -24px;
+  margin-right: -24px;
+}
+.nautilus-list-view columnview > listview > row {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.nautilus-list-view columnview > listview > row {
+  border-radius: 6px;
+}
+
+/* GTK unconditionally sets padding on GtkColumnViewCell, even with .data-table.
+ * We don't want this to hpappen because we have event controllers on the child,
+ * which should thus cover the whole area of the row. */
+.nautilus-list-view columnview > listview > row > cell {
+  padding: 0px;
+}
+
+.nautilus-list-view #NautilusViewCell {
+  padding: 6px;
+}
+
+/* We want drop feedback on the whole row. Disable per-cell feedback */
+.nautilus-list-view #NautilusViewCell:drop(active) {
+  box-shadow: none;
+}
+
+.nautilus-list-view.compact #NautilusViewCell {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.nautilus-list-view:not(.compact) image.star {
+  padding: 6px;
+}
+
+.nautilus-list-view menubutton.fts-snippet > button {
+  border-radius: 100px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.nautilus-list-view menubutton.fts-snippet > popover > * {
+  padding: 18px;
+}
+
+/* Both views */
+.nautilus-list-view:drop(active),
+.nautilus-grid-view:drop(active) {
+  box-shadow: none;
+}
+
+.view .thumbnail {
+  background: url('/org/gnome/nautilus/Checkerboard.png') repeat;
+  border-radius: 2px;
+  /* Draw a shin and outline to meld better with full-color icons */
+  box-shadow: 0px 0px 0px 1px @shade_color,
+              0px 2px 0px 0px @shade_color;
+}
+
+.view picture {
+  filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.3));
+}
+
+.view statuspage {
+  opacity: 0.50;
+}
+
+.view .cut {
+  opacity: 0.55;
+}
+
+.view image.star:hover {
+  opacity: 1;
+}
+
+@keyframes rotate_star {
+  from { -gtk-icon-transform: rotate(-72deg); }
+  to {}
+}
+
+.view image.star.added {
+  animation: rotate_star 0.4s ease;
+}
+
+#NautilusAppChooser treeview {
+  min-height: 36px;
+  -gtk-icon-size: 32px;
+}
+
+label.encrypted_zip {
+    background-image: -gtk-icontheme('system-lock-screen-symbolic');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    padding-right: 22px;
+}
+
+rubberband {
+  border-radius: 6px;
+}

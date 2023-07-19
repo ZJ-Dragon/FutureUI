@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Maximiliano Sandoval 2023 <msandova@gnome.org> -->
+<component type="desktop-application">
+  <id>@app-id@</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Snapshot</name>
+  <summary>Take pictures and videos</summary>
+  <description>
+    <p>
+      Take pictures and videos on your computer, tablet, or phone.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/GNOME/Incubator/snapshot/raw/main/data/screenshots/screenshot1.png</image>
+      <caption>Snapshot's main interface</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/GNOME/Incubator/snapshot/raw/main/data/screenshots/gallery.png</image>
+      <caption>Snapshot's gallery viewer</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://apps.gnome.org/app/org.gnome.Snapshot</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/Incubator/snapshot/issues</url>
+  <url type="translate">https://l10n.gnome.org/module/snapshot/</url>
+  <url type="donation">https://www.gnome.org/donate</url>
+  <content_rating type="oars-1.0" />
+  <releases>
+    <release version="45.alpha" date="2023-06-30">
+      <description>
+        <p>Minor release with updates to various dependencies.</p>
+        <ul>
+          <li>Update Aperture to v0.2, update Rust to 1.70</li>
+          <li>Update to Libadwaita 1.4, use new adaptive components</li>
+          <li>Show all window controls on the top of the window</li>
+          <li>Improved accessibility</li>
+          <li>Squash various bugs</li>
+          <li>Update translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="44.2" date="2023-05-22">
+      <description>
+        <p>Minor bugfix release.</p>
+        <ul>
+          <li>Improve adaptive controls</li>
+          <li>New translations</li>
+          <li>Disable composition guidelines by default</li>
+        </ul>
+      </description>
+    </release>
+    <release version="44.1" date="2023-05-08">
+      <description>
+        <p>Minor release.</p>
+        <ul>
+          <li>Adaptive controls</li>
+          <li>Fixed multiple cameras, including the PinePhone Pro's</li>
+          <li>Improve error handling and reporting</li>
+          <li>Add composition guidelines</li>
+        </ul>
+      </description>
+    </release>
+    <release version="44.0" date="2023-04-26">
+      <description>
+        <p>Preview release of Snapshot.</p>
+      </description>
+    </release>
+  </releases>
+  <kudos>
+     <!--
+       GNOME Software kudos:
+       https://gitlab.gnome.org/GNOME/gnome-software/blob/main/doc/kudos.md
+     -->
+     <kudo>ModernToolkit</kudo>
+     <kudo>HiDpiIcon</kudo>
+  </kudos>
+  <developer_name>The GNOME Project</developer_name>
+  <update_contact>msandova@gnome.org</update_contact>
+  <translation type="gettext">@gettext-package@</translation>
+  <launchable type="desktop-id">@app-id@.desktop</launchable>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <platform>GTK 4</platform>
+  <platform>Libadwaita</platform>
+  <provides>
+    <binary>@bin-name@</binary>
+  </provides>
+</component>

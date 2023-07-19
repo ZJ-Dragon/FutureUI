@@ -1,0 +1,123 @@
+name: gnome-firmware
+adopt-info: gnome-firmware
+confinement: strict
+grade: stable
+base: core18
+architectures:
+  - amd64
+
+slots:
+  # for GtkApplication registration
+  gnome-firmware:
+    interface: dbus
+    bus: session
+    name: org.gnome.Firmware
+
+apps:
+  gnome-firmware:
+    command: usr/bin/gnome-firmware
+    plugs:
+      - fwupd
+      - network
+    desktop: usr/share/applications/org.gnome.Firmware.desktop
+    common-id: org.gnome.Firmware.desktop
+    extensions: [gnome-3-34]
+    environment:
+      LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/lib/gnome-firmware
+
+parts:
+  nettle:
+    plugin: autotools
+    source: https://ftp.gnu.org/gnu/nettle/nettle-3.5.tar.gz
+    build-packages:
+     - libgmp-dev
+    prime:
+     - -include
+     - -bin
+     - -share/man
+     - -lib/pkgconfig
+  gnutls:
+    plugin: autotools
+    source: https://www.gnupg.org/ftp/gcrypt/gnutls/v3.6/gnutls-3.6.12.tar.xz
+    build-packages:
+      - libtasn1-6-dev
+      - libunistring-dev
+      - libidn2-dev
+      - libunbound-dev
+      - libp11-kit-dev
+    prime:
+     - -include
+     - -bin
+     - -share/man
+     - -lib/pkgconfig
+    after: [nettle]
+
+  gnome-firmware:
+    after: [gnutls]
+    source: .
+    plugin: meson
+    build-environment:
+      - C_INCLUDE_PATH: $SNAPCRAFT_STAGE/usr/include/gtksourceview-4
+    meson-parameters:
+      - --prefix=/snap/gnome-firmware/current/usr
+      - -Dsystemd=false
+      - -Dman=false
+      - -Ddevel=true
+      - -Dlibxmlb:gtkdoc=false
+      - -Dlibxmlb:introspection=false
+      - -Dlibjcat:man=false
+      - -Dlibjcat:gtkdoc=false
+      - -Dlibjcat:introspection=false
+      - -Dlibjcat:tests=false
+      - -Dfwupd:gtkdoc=false
+      - -Dfwupd:introspection=false
+      - -Dfwupd:build=library
+      - -Dfwupd:man=false
+      - -Dfwupd:tests=false
+      - -Dgcab:docs=false
+      - -Dgcab:introspection=false
+      - -Dgcab:vapi=false
+      - -Dgcab:tests=false
+    organize:
+      snap/gnome-firmware/current/usr: usr
+    parse-info: [usr/share/metainfo/org.gnome.Firmware.metainfo.xml]
+    build-packages:
+      - desktop-file-utils
+      - appstream
+      - appstream-util
+      - help2man
+      - git
+      - libgpgme11-dev
+      - libgtk-3-dev
+      - libgudev-1.0-dev
+      - libjson-glib-dev
+      - libsoup2.4-dev
+      - libcurl4-gnutls-dev
+    override-pull: |
+      snapcraftctl pull
+      # Needed to work around parse failure https://bugs.launchpad.net/snapcraft/+bug/1852329
+      sed -e '/^ *<!--.*/d' -i $SNAPCRAFT_PART_SRC/data/appdata/org.gnome.Firmware.metainfo.xml.in
+      snapcraftctl set-version $(git describe HEAD --always)
+    override-build: |
+       sed -i.bak -e 's|Icon=org.gnome.Firmware$|Icon=${SNAP}/meta/gui/org.gnome.Firmware.svg|g' data/org.gnome.Firmware.desktop.in
+       snapcraftctl build
+       mkdir -p $SNAPCRAFT_PART_INSTALL/meta/gui/
+       cp data/icons/org.gnome.Firmware.svg $SNAPCRAFT_PART_INSTALL/meta/gui/
+       cp ../build/snapbuild/data/org.gnome.Firmware.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
+    prime:
+      - -usr/share/appdata
+      - -usr/lib/*/pkgconfig
+
+  libraries:
+    after: [gnome-firmware]
+    plugin: nil
+    stage-packages:
+      - libevent-2.1-6
+      - libunbound2
+      - libassuan0
+      - libgpgme11
+    prime:
+      - usr/lib/*/libevent*
+      - usr/lib/*/libunbound*
+      - usr/lib/*/libassuan*
+      - usr/lib/*/libgpgme*

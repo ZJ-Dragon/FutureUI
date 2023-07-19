@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019 Richard Hughes <richard@hughsie.com> -->
+<component type="desktop">
+  <id>org.gnome.Firmware.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <!-- TRANSLATORS: the application name -->
+  <name>Firmware</name>
+  <!-- TRANSLATORS: one-line description for the app -->
+  <summary>Install firmware on devices</summary>
+  <description>
+    <!-- TRANSLATORS: AppData description marketing paragraph -->
+    <p>
+      Update, reinstall and downgrade firmware on devices supported by fwupd.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/hughsie/gnome-firmware-updater/raw/master/data/appdata/ss-devices.png</image>
+      <caption>Devices panel</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/hughsie/gnome-firmware-updater/raw/master/data/appdata/ss-releases.png</image>
+      <caption>Releases panel</caption>
+    </screenshot>
+  </screenshots>
+  <project_group>GNOME</project_group>
+  <developer_name>Richard Hughes</developer_name>
+  <translation type="gettext">gnome-firmware</translation>
+  <releases>
+    <release date="2023-02-15" version="43.2">
+      <description>
+        <p>Fixes the following issues:</p>
+        <ul>
+          <li>Add the missing device flags</li>
+          <li>Only set the user agent when the fwupd version is known</li>
+        </ul>
+        <p>This release also adds new translations.</p>
+      </description>
+    </release>
+    <release date="2022-12-07" version="43.1">
+      <description>
+        <p>Fixes the following issues:</p>
+        <ul>
+          <li>Add GPU symbol</li>
+          <li>Change layout of GUIDs from PreferenceGroup to ExpanderRow</li>
+          <li>Fix compile failure with -Dsystemd=false</li>
+        </ul>
+        <p>This release also adds new translations.</p>
+      </description>
+    </release>
+    <release date="2022-09-16" version="43.0">
+      <description>
+        <p>Fixes the following issues:</p>
+        <ul>
+          <li>Use the new usb-receiver icon</li>
+          <li>Add a Windows msys2 build for future use</li>
+        </ul>
+        <p>This release also adds new translations.</p>
+      </description>
+    </release>
+    <release date="2022-05-11" version="42.2">
+      <description>
+        <p>Fixes the following issues:</p>
+        <ul>
+          <li>Do not show the estimated time to completion</li>
+          <li>Provide generic device fallbacks</li>
+          <li>Show the about dialog in the menu</li>
+          <li>Show translated device problems</li>
+        </ul>
+        <p>This release also adds new translations.</p>
+      </description>
+    </release>
+    <release date="2022-04-12" version="42.1">
+      <description>
+        <p>Fixes the following issues:</p>
+        <ul>
+          <li>Do not create duplicate request events</li>
+          <li>Mark the application as adaptive for mobile</li>
+          <li>Do not show crazy remaining time values</li>
+          <li>Show how GUIDs are constructed in the UI</li>
+          <li>Show the 'No Releases Available' in more cases</li>
+          <li>Update the progressbar text for every percentage changed event</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2022-03-31" version="42.0">
+      <description>
+        <p>This is the first release for GNOME 42.</p>
+        <ul>
+          <li>Port to GTK4</li>
+          <li>Add the device branch to the device page</li>
+          <li>Allow installing firmware with the AFFECTS_FDE flag</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2022-02-17" version="42~beta">
+      <description>
+        <p>Fixes the following issues</p>
+        <ul>
+          <li>Correctly print release flags</li>
+          <li>Enable releases leaflet gestures to be more adaptable</li>
+          <li>Hide the back button when folded</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2021-12-20" version="41.0" type="stable">
+      <description>
+        <p>This is the first release for GNOME 41.</p>
+        <ul>
+          <li>Add support for showing the update message</li>
+          <li>Add support for switching branch</li>
+          <li>Send the client features at startup</li>
+          <li>Show a FDE warning when required</li>
+          <li>Show composite devices clearly</li>
+          <li>Use libhandy to make UI responsive</li>
+          <li>Use the new API from fwupd to avoid blocking the main  thread</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2020-07-03" version="3.36.0">
+      <description>
+        <p>
+          This is the first stable release in the 3.36 series:
+        </p>
+        <ul>
+          <li>Dynamically show verify and releases buttons</li>
+          <li>Show device and progress when doing updates</li>
+          <li>Show the release issues if supplied in the metadata</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2019-09-13" version="3.34.0">
+      <description>
+        <p>
+          This is the first stable release:
+        </p>
+        <ul>
+          <li>Show all device metadata supported by fwupd</li>
+          <li>Add ability to install, downgrade and reinstall firmware</li>
+          <li>Add ability to unlock hardware such as TPMs</li>
+          <li>Add ability to automatically enable the LVFS and refresh the metadata</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <url type="homepage">https://gitlab.gnome.org/hughsie/gnome-firmware-updater</url>
+  <url type="bugtracker">https://gitlab.gnome.org/hughsie/gnome-firmware-updater/issues</url>
+  <url type="donation">http://www.gnome.org/friends/</url>
+  <update_contact>richard_at_hughsie.com</update_contact>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+  </content_rating>
+</component>

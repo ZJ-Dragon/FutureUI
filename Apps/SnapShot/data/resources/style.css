@@ -1,0 +1,108 @@
+.shutterbutton,
+.gallerybutton {
+  color: white;
+  background-color: transparent;
+  border-radius: 999px;
+  padding: 0;
+  outline-offset: 5px;
+}
+
+.shutterbutton:focus:focus-visible,
+.gallerybutton:focus:focus-visible {
+  outline-offset: 1px;
+}
+
+.shutterbutton {
+  min-height: 64px;
+  min-width: 64px;
+}
+
+.gallerybutton,
+.camerabutton {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.shutterbutton:active,
+.gallerybutton:active {
+  opacity: .97;
+}
+
+gallery {
+  background-color: black;
+}
+
+.videoplayercontrols {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 50px;
+}
+
+.videoplayercontrols button {
+ border-radius: 999px;
+}
+
+.controlsframe {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+camera .controlsframe {
+  padding: 12px;
+}
+
+camera:not(.mobile) .bottom.controlsframe {
+  padding-left: 18px;
+  padding-right: 24px;
+}
+
+camera:not(.mobile) .startcontrolsframe {
+  background: none;
+}
+
+gallery headerbar {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+gallery .controlsframe {
+  padding: 6px;
+}
+
+gallery button.back {
+  border-radius: 500px;
+}
+
+button.gallerycontrols.circular {
+  padding: 9px;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+camera .horizontal.picturevideotoggle > button > image {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+camera.mobile .horizontal.picturevideotoggle > button > image {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+camera.mobile .vertical.picturevideotoggle > button > image {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+camera .recording-label {
+  padding: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 500px;
+  margin-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+camera.portrait .recording-label {
+  margin-bottom: 24px;
+}

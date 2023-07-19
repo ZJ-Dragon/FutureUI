@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/Incubator/snapshot/-/issues\n"
+"POT-Creation-Date: 2023-04-29 17:23+0000\n"
+"PO-Revision-Date: 2023-05-03 19:17+0200\n"
+"Last-Translator: Quentin PAGÈS\n"
+"Language-Team: \n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: data/org.gnome.Snapshot.desktop.in.in:3
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:7 src/main.rs:28
+#: src/widgets/window.rs:232
+msgid "Snapshot"
+msgstr "Snapshot"
+
+#: data/org.gnome.Snapshot.desktop.in.in:4
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:8
+msgid "Take pictures and videos"
+msgstr "Prendre de fòtos e vidèos"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Snapshot.desktop.in.in:10
+msgid "picture;photos;camera;"
+msgstr "imatge;fòto;aparelh fòto;camèra;fotografia;"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:16
+#: data/org.gnome.Snapshot.gschema.xml.in:17
+msgid "Default window width"
+msgstr "Largor per defaut de la fenèstra"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:21
+#: data/org.gnome.Snapshot.gschema.xml.in:22
+msgid "Default window height"
+msgstr "Nautor per defaut de la fenèstra"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:26
+msgid "Default window maximized behaviour"
+msgstr "Compòrtament per defaut de la fenèstra maximizada"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:31
+msgid "Play shutter sound"
+msgstr "Legir lo son de l'obturator"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:32
+msgid "Whether to play a shutter sound when taking pictures"
+msgstr "Se cal legir un son d’obturator en prenent de fòtos"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:36
+msgid "Countdown timer"
+msgstr "Minutador"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:37
+msgid "The duration of the countdown for taking photos, in seconds"
+msgstr "La durada del retardador per prendre de fòtos, en segondas."
+
+#: data/org.gnome.Snapshot.gschema.xml.in:41
+msgid "Capture mode"
+msgstr "Mòde de captura"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:42
+msgid "Whether to take pictures or videos"
+msgstr "Se cal prendre de fòtos o vidèos"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:46
+msgid "Picture format"
+msgstr "Format d’imatge"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:47
+msgid "Whether to save pictures as png or jpeg"
+msgstr "Se cal enregistrar los imatges en png o jpeg"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:51
+msgid "Video format"
+msgstr "Format vidèo"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:52
+msgid "Whether to save videos as mp4 or webm"
+msgstr "Se cal salvar las vidèos en mp4 o webm"
+
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:10
+msgid "Take pictures and videos on your computer, tablet, or phone."
+msgstr "Prenètz de fòtos e vidèos amb vòstre ordenador, tauleta o telefòn."
+
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:17
+msgid "Snapshot's main interface"
+msgstr "Interfàcia principala de Snapshot"
+
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:39 src/widgets/window.rs:238
+msgid "The GNOME Project"
+msgstr "Lo projècte GNOME"
+
+#: data/resources/ui/camera.ui:48 data/resources/ui/camera.ui:100
+#: data/resources/ui/camera.ui:253 data/resources/ui/camera.ui:339
+#: data/resources/ui/camera.ui:382 data/resources/ui/gallery.ui:64
+msgid "Main Menu"
+msgstr "Menú principal"
+
+#: data/resources/ui/camera.ui:58
+msgid "No Camera Found"
+msgstr "Cap de camèra pas trobada"
+
+#: data/resources/ui/camera.ui:59
+msgid "Connect a camera device"
+msgstr "Connectatz un periferic fotografic"
+
+#: data/resources/ui/camera.ui:124 data/resources/ui/camera.ui:208
+#: data/resources/ui/camera.ui:301 data/resources/ui/camera.ui:404
+msgid "Picture Mode"
+msgstr "Mòde fòto"
+
+#: data/resources/ui/camera.ui:142 data/resources/ui/camera.ui:226
+#: data/resources/ui/camera.ui:319 data/resources/ui/camera.ui:422
+msgid "Recording Mode"
+msgstr "Mòde enregistrament"
+
+#: data/resources/ui/camera.ui:163 data/resources/ui/camera.ui:187
+#: data/resources/ui/camera.ui:508 data/resources/ui/camera.ui:535
+msgid "Countdown"
+msgstr "Retardador"
+
+#: data/resources/ui/camera.ui:450
+msgid "Open Gallery"
+msgstr "Dobrir la galariá"
+
+#. Set a fallback tooltip
+#: data/resources/ui/camera.ui:456 src/widgets/shutter_button.rs:66
+#: src/widgets/shutter_button.rs:126
+msgid "Take Picture"
+msgstr "Prene una fòto"
+
+#: data/resources/ui/camera.ui:469
+msgid "Select Camera"
+msgstr "Seleccionar una camèra"
+
+#: data/resources/ui/camera.ui:483
+msgctxt "Switch between front and back camera button"
+msgid "Switch Camera"
+msgstr "Cambiar de camèra"
+
+#. TRANSLATORS this indicates the countdown is disabled
+#: data/resources/ui/camera.ui:538
+msgid "None"
+msgstr "Pas cap"
+
+#. TRANSLATORS this is time for a countdown in seconds
+#: data/resources/ui/camera.ui:543
+msgid "3s"
+msgstr "3s"
+
+#. TRANSLATORS this is time for a countdown in seconds
+#: data/resources/ui/camera.ui:548
+msgid "5s"
+msgstr "5s"
+
+#. TRANSLATORS this is time for a countdown in seconds
+#: data/resources/ui/camera.ui:553
+msgid "10s"
+msgstr "10s"
+
+#: data/resources/ui/camera.ui:561 data/resources/ui/gallery.ui:147
+msgid "_Preferences"
+msgstr "_Preferéncias"
+
+#: data/resources/ui/camera.ui:565 data/resources/ui/gallery.ui:151
+msgid "_Keyboard Shortcuts"
+msgstr "_Acorchis de clavièr"
+
+#: data/resources/ui/camera.ui:569 data/resources/ui/gallery.ui:155
+msgid "_About Snapshot"
+msgstr "_A prepaus de Snapshot"
+
+#: data/resources/ui/gallery.ui:51
+msgid "Back"
+msgstr "Retorn"
+
+#: data/resources/ui/gallery.ui:89 src/widgets/gallery.rs:97
+msgid "Open in Image Viewer"
+msgstr "Dobrir amb lo visionador d'imatge"
+
+#: data/resources/ui/gallery.ui:111
+msgid "Previous Image"
+msgstr "Imatge precedent"
+
+#: data/resources/ui/gallery.ui:123
+msgid "Next Image"
+msgstr "Imatge seguent"
+
+#: data/resources/ui/preferences_window.ui:10
+msgid "General"
+msgstr "General"
+
+#: data/resources/ui/preferences_window.ui:14
+msgid "Camera"
+msgstr "Camèra"
+
+#: data/resources/ui/preferences_window.ui:17
+msgid "Play Shutter Sound"
+msgstr "Legir lo son de l'obturator"
+
+#: data/resources/ui/shortcuts.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "General"
+
+#: data/resources/ui/shortcuts.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Afichar los acorchis"
+
+#: data/resources/ui/shortcuts.ui:20
+msgctxt "shortcut window"
+msgid "Main Menu"
+msgstr "Menú principal"
+
+#: data/resources/ui/shortcuts.ui:26
+msgctxt "Shortcut window description"
+msgid "Open Preferences"
+msgstr "Dobrir las preferéncias"
+
+#: data/resources/ui/shortcuts.ui:32
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Quitar"
+
+#: data/resources/ui/shortcuts.ui:40
+msgctxt "shortcut window"
+msgid "Camera"
+msgstr "Camèra"
+
+#: data/resources/ui/shortcuts.ui:43
+msgctxt "shortcut window"
+msgid "Picture Mode"
+msgstr "Mòde fòto"
+
+#: data/resources/ui/shortcuts.ui:49
+msgctxt "shortcut window"
+msgid "Recording Mode"
+msgstr "Mòde enregistrament"
+
+#: data/resources/ui/shortcuts.ui:55
+msgctxt "shortcut window"
+msgid "Take Picture or Start Recording"
+msgstr "Prendre una fòto o lançar l’enregistrament"
+
+#: data/resources/ui/shortcuts.ui:63
+msgctxt "shortcut window"
+msgid "Gallery"
+msgstr "Galariá"
+
+#: data/resources/ui/shortcuts.ui:66
+msgctxt "shortcut window"
+msgid "Open/Close Gallery"
+msgstr "Dobrir/Tampar la galariá"
+
+#: data/resources/ui/shortcuts.ui:72
+msgctxt "shortcut window"
+msgid "Next"
+msgstr "Seguent"
+
+#: data/resources/ui/shortcuts.ui:78
+msgctxt "shortcut window"
+msgid "Previous"
+msgstr "Precedent"
+
+#. TRANSLATORS This is the image format presented in the preferences
+#. window.
+#: src/enums.rs:39
+msgid "JPEG"
+msgstr "JPEG"
+
+#: src/widgets/camera.rs:431
+msgid "Could not play camera stream"
+msgstr "Lectura impossibla del flux de la camèra"
+
+#: src/widgets/gallery.rs:99
+msgid "Open in Video Player"
+msgstr "Dorbir dins un lector vidèo"
+
+#: src/widgets/shutter_button.rs:77
+msgid "Start Recording"
+msgstr "Aviar l'enregistrament"
+
+#: src/widgets/shutter_button.rs:88
+msgid "Stop Recording"
+msgstr "Arrestar l'enregistrament"
+
+#: src/widgets/window.rs:237
+msgid "translator-credits"
+msgstr "Quentin PAGÈS"
+
+#~ msgid "Maximiliano Sandoval"
+#~ msgstr "Maximiliano Sandoval"
+
+#~ msgid "Picture Format"
+#~ msgstr "Format d’imatge"
+
+#~ msgid "PNG"
+#~ msgstr "PNG"

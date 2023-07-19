@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="EphyActionBar" parent="AdwBin">
+    <child>
+      <object class="GtkBox" id="toolbar">
+        <style>
+          <class name="toolbar"/>
+        </style>
+        <child>
+          <object class="EphyActionBarStart" id="action_bar_start">
+            <property name="hexpand">True</property>
+            <property name="halign">start</property>
+          </object>
+        </child>
+        <child>
+          <object class="EphyActionBarEnd" id="action_bar_end"/>
+        </child>
+        <child>
+          <object class="AdwTabButton" id="tab_button">
+            <property name="action_name">win.tabs-view</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

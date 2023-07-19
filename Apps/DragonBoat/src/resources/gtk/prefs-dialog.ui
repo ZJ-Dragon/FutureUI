@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <template class="EphyPrefsDialog" parent="AdwPreferencesWindow">
+    <property name="modal">True</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="icon-name">gtk-preferences</property>
+    <property name="default-width">640</property>
+    <property name="default-height">580</property>
+    <property name="can-navigate-back">True</property>
+    <signal name="close-request" handler="on_close_request"/>
+    <child>
+      <object class="PrefsGeneralPage" id="general_page"/>
+    </child>
+    <child>
+      <object class="PrefsPrivacyPage">
+        <signal name="passwords-row-activated" handler="on_passwords_row_activated"/>
+        <signal name="clear-data-row-activated" handler="on_clear_data_row_activated"/>
+      </object>
+    </child>
+    <child>
+      <object class="PrefsAppearancePage"/>
+    </child>
+  </template>
+</interface>

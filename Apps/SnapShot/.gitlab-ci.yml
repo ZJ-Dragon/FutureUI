@@ -1,0 +1,84 @@
+stages:
+  - check
+  - test
+  - deploy
+
+include:
+  - project: "GNOME/citemplates"
+    file: "flatpak/flatpak_ci_initiative.yml"
+
+variables:
+  BUNDLE: "org.gnome.Snapshot.Devel.flatpak"
+  MANIFEST_PATH: "build-aux/org.gnome.Snapshot.Devel.json"
+  FLATPAK_MODULE: "snapshot"
+  APP_ID: "org.gnome.Snapshot.Devel"
+  RUNTIME_REPO: "https://nightly.gnome.org/gnome-nightly.flatpakrepo"
+
+flatpak@x86_64:
+  extends: ".flatpak@x86_64"
+
+flatpak@aarch64:
+  extends: ".flatpak@aarch64"
+
+rustfmt:
+  image: "rust:slim"
+  stage: check
+  script:
+    - rustup component add rustfmt
+    - echo -e "" >> src/config.rs
+    - rustc -Vv && cargo -Vv
+    - cargo fmt --version
+    - cargo fmt --all -- --color=always --check
+
+cargo-doc:
+  stage: test
+  image: "ghcr.io/gtk-rs/gtk4-rs/gtk4:latest"
+  interruptible: true
+  artifacts:
+    name: 'Code Documentation'
+    paths:
+      - doc
+  variables:
+    DOC_OPTIONS: |
+      --extern-html-root-url=gtk4=https://gtk-rs.org/gtk4-rs/stable/latest/docs/
+      --extern-html-root-url=gio=https://gtk-rs.org/gtk-rs-core/stable/latest/docs/
+      --extern-html-root-url=glib=https://gtk-rs.org/gtk-rs-core/stable/latest/docs/
+      --extern-html-root-url=gio=https://gtk-rs.org/gtk-rs-core/stable/latest/docs/
+      --extern-html-root-url=gstreamer=https://gstreamer.pages.freedesktop.org/gstreamer-rs/stable/latest/docs/
+  before_script:
+    - sudo dnf install -y gstreamer1-devel gstreamer1-plugins-base-devel
+    - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain none -y
+    - source $HOME/.cargo/env
+    - rustup toolchain install nightly --profile minimal --allow-downgrade
+  script:
+    - cd aperture
+    - cargo +nightly rustdoc -- -Z unstable-options ${DOC_OPTIONS}
+    - mv target/doc ../
+
+cargo-audit:
+  stage: test
+  interruptible: true
+  image: rust
+  allow_failure: true
+  script:
+    - cargo install cargo-deny
+    - cargo deny check
+
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - mv doc public
+  artifacts:
+    paths:
+      - 'public'
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+nightly@x86_64:
+  extends: ".publish_nightly"
+  needs: ["flatpak@x86_64"]
+
+nightly@aarch64:
+  extends: ".publish_nightly"
+  needs: ["flatpak@aarch64"]

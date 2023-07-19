@@ -1,0 +1,400 @@
+# Georgian translation for Snapshot.
+# Copyright (C) 2023 Snapshot's authors.
+# This file is distributed under the same license as the Snapshot package.
+# Ekaterine Papava <papava.e@gtu.ge>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Snapshot main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/Incubator/snapshot/-/"
+"issues\n"
+"POT-Creation-Date: 2023-07-14 19:05+0000\n"
+"PO-Revision-Date: 2023-07-15 06:36+0200\n"
+"Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
+"Language-Team: Georgian <ka@li.org>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: data/org.gnome.Snapshot.desktop.in.in:3
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:7 data/resources/ui/window.ui:6
+#: src/main.rs:29 src/widgets/window.rs:261
+msgid "Snapshot"
+msgstr "სწრაფი ასლი"
+
+#: data/org.gnome.Snapshot.desktop.in.in:4
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:8
+msgid "Take pictures and videos"
+msgstr "გადაიღეთ სურათები და ვიდეოები"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Snapshot.desktop.in.in:10
+msgid "picture;photos;camera;webcam;"
+msgstr "picture;photos;camera;webcam;კამერა;სურათები;ვებკამერა;"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:16
+#: data/org.gnome.Snapshot.gschema.xml.in:17
+msgid "Default window width"
+msgstr "ფანჯრის ნაგულისხმები სიგანე"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:21
+#: data/org.gnome.Snapshot.gschema.xml.in:22
+msgid "Default window height"
+msgstr "ფანჯრის ნაგულისხმები სიგრძე"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:26
+msgid "Default window maximized behaviour"
+msgstr "ფანჯრის ქცევა სრულად გაშლისას"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:31
+msgid "Play shutter sound"
+msgstr "შატერის ხმის დაკვრა"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:32
+msgid "Whether to play a shutter sound when taking pictures"
+msgstr "დავუკრა თუ არა შატერის ხმა სურათების გადაღებისას"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:36
+msgid "Show composition guidelines"
+msgstr "კომპოზიციის დირექტივების ჩვენება"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:37
+msgid "Whether to show composition guidelines when using the camera"
+msgstr "კამერის გამოყენებისას იქნება კომპოზიციის დირექტივები ნაჩვენები, თუ არა"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:41
+msgid "Countdown timer"
+msgstr "დროის ათვლის წამზომი"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:42
+msgid "The duration of the countdown for taking photos, in seconds"
+msgstr "წამზომის დაყოვნების ხანგრძლივობა სურათის გადაღებამდე, წამებში"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:46
+msgid "Capture mode"
+msgstr "გადაღების რეჟიმი"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:47
+msgid "Whether to take pictures or videos"
+msgstr "სურათი გადავიღო, თუ ვიდეო"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:51
+msgid "Picture format"
+msgstr "სურათის ფორმატი"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:52
+msgid "Whether to save pictures as png or jpeg"
+msgstr "სურათები PNG-ით შევინახო, თუ JPEG"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:56
+msgid "Video format"
+msgstr "ვიდეოს ფორმატი"
+
+#: data/org.gnome.Snapshot.gschema.xml.in:57
+msgid "Whether to save videos as mp4 or webm"
+msgstr "ვიდეო MP4-ით შევინახო, თუ WEBM"
+
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:10
+msgid "Take pictures and videos on your computer, tablet, or phone."
+msgstr "გადაიღეთ სურათები და ვიდეო თქვენი კომპიუტერით, ტაბლეტით და ტელეფონით."
+
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:17
+msgid "Snapshot's main interface"
+msgstr "Snapshot-ის მთავარი ინტერფეისი"
+
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:21
+msgid "Snapshot's gallery viewer"
+msgstr "Snapshot-ის გალერეა"
+
+#: data/org.gnome.Snapshot.metainfo.xml.in.in:78 src/widgets/window.rs:267
+msgid "The GNOME Project"
+msgstr "პროექტი \"GNOME\""
+
+#: data/resources/ui/camera.ui:97 data/resources/ui/camera.ui:169
+#: data/resources/ui/camera.ui:340 data/resources/ui/camera.ui:475
+msgid "Main Menu"
+msgstr "მთავარი მენიუ"
+
+#: data/resources/ui/camera.ui:107
+msgid "No Camera Found"
+msgstr "კამერის გარეშე"
+
+#: data/resources/ui/camera.ui:108
+msgid "Connect a camera device"
+msgstr "შეაერთეთ კამერის მოწყობილობა"
+
+#: data/resources/ui/camera.ui:195 data/resources/ui/camera.ui:293
+#: data/resources/ui/camera.ui:406 data/resources/ui/camera.ui:497
+msgid "Picture Mode"
+msgstr "სურათის რეჟიმი"
+
+#: data/resources/ui/camera.ui:214 data/resources/ui/camera.ui:312
+#: data/resources/ui/camera.ui:425 data/resources/ui/camera.ui:516
+msgid "Recording Mode"
+msgstr "ჩაწერის რეჟიმი"
+
+#: data/resources/ui/camera.ui:236 data/resources/ui/camera.ui:270
+#: data/resources/ui/camera.ui:373 data/resources/ui/camera.ui:545
+#: data/resources/ui/camera.ui:576
+msgid "Countdown"
+msgstr "ათვლა"
+
+#. TRANSLATORS this indicates the countdown is disabled
+#: data/resources/ui/camera.ui:579
+msgid "None"
+msgstr "არაფერი"
+
+#. TRANSLATORS this is time for a countdown in seconds
+#: data/resources/ui/camera.ui:584
+msgid "3s"
+msgstr "3წმ"
+
+#. TRANSLATORS this is time for a countdown in seconds
+#: data/resources/ui/camera.ui:589
+msgid "5s"
+msgstr "5წმ"
+
+#. TRANSLATORS this is time for a countdown in seconds
+#: data/resources/ui/camera.ui:594
+msgid "10s"
+msgstr "10წმ"
+
+#: data/resources/ui/camera.ui:602
+msgid "_Preferences"
+msgstr "_გამართვა"
+
+#: data/resources/ui/camera.ui:606
+msgid "_Keyboard Shortcuts"
+msgstr "_კლავიატურის მალსახმობები"
+
+#: data/resources/ui/camera.ui:610
+msgid "_About Snapshot"
+msgstr "Snapshot-ის _შესახებ"
+
+#: data/resources/ui/camera_controls.ui:12
+msgid "Open Gallery"
+msgstr "გალერეის გახსნა"
+
+#. Set a fallback tooltip
+#: data/resources/ui/camera_controls.ui:18 src/widgets/shutter_button.rs:70
+#: src/widgets/shutter_button.rs:130
+msgid "Take Picture"
+msgstr "სურათის გადაღება"
+
+#: data/resources/ui/camera_controls.ui:28
+msgid "Select Camera"
+msgstr "აირჩიეთ კამერა"
+
+#: data/resources/ui/camera_controls.ui:41
+msgctxt "Switch between front and back camera button"
+msgid "Switch Camera"
+msgstr "კამერის გადართვა"
+
+#: data/resources/ui/gallery.ui:51
+msgid "Gallery Menu"
+msgstr "გალერეის მენიუ"
+
+#: data/resources/ui/gallery.ui:100
+msgid "Previous Image"
+msgstr "წინა გამოსახულება"
+
+#: data/resources/ui/gallery.ui:112
+msgid "Next Image"
+msgstr "შემდეგი გამოსახულება"
+
+#: data/resources/ui/gallery.ui:145 src/widgets/gallery.rs:115
+msgid "Open in Image Viewer"
+msgstr "სურათების გამხსნელში გახსნა"
+
+#: data/resources/ui/preferences_window.ui:10
+msgid "General"
+msgstr "საერთო"
+
+#: data/resources/ui/preferences_window.ui:16
+msgid "_Shutter Sound"
+msgstr "_შატერის ხმა"
+
+#: data/resources/ui/preferences_window.ui:23
+msgid "_Composition Guidelines"
+msgstr "_კომპოზიციის დირექტივები"
+
+#: data/resources/ui/shortcuts.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "საერთო"
+
+#: data/resources/ui/shortcuts.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "მალსახმობების ჩვენება"
+
+#: data/resources/ui/shortcuts.ui:20
+msgctxt "shortcut window"
+msgid "Main Menu"
+msgstr "მთავარი მენიუ"
+
+#: data/resources/ui/shortcuts.ui:26
+msgctxt "Shortcut window description"
+msgid "Open Preferences"
+msgstr "მორგების ფანჯრის გახსნა"
+
+#: data/resources/ui/shortcuts.ui:32
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "გასვლა"
+
+#: data/resources/ui/shortcuts.ui:40
+msgctxt "shortcut window"
+msgid "Camera"
+msgstr "კამერა"
+
+#: data/resources/ui/shortcuts.ui:43
+msgctxt "shortcut window"
+msgid "Picture Mode"
+msgstr "სურათის რეჟიმი"
+
+#: data/resources/ui/shortcuts.ui:49
+msgctxt "shortcut window"
+msgid "Recording Mode"
+msgstr "ჩაწერის რეჟიმი"
+
+#: data/resources/ui/shortcuts.ui:55
+msgctxt "shortcut window"
+msgid "Take Picture or Start Recording"
+msgstr "გადაიღეთ სურათი ან დაიწყეთ ჩაწერა"
+
+#: data/resources/ui/shortcuts.ui:61
+msgctxt "shortcut window"
+msgid "Show/Hide Composition Guidelines"
+msgstr "კომპოზიციის დირექტივების ჩვენება/დამალვა"
+
+#: data/resources/ui/shortcuts.ui:69
+msgctxt "shortcut window"
+msgid "Gallery"
+msgstr "გალერეა"
+
+#: data/resources/ui/shortcuts.ui:72
+msgctxt "shortcut window"
+msgid "Open/Close Gallery"
+msgstr "გალერეის გახსნა/დახურვა"
+
+#: data/resources/ui/shortcuts.ui:78
+msgctxt "shortcut window"
+msgid "Next"
+msgstr "შემდეგი"
+
+#: data/resources/ui/shortcuts.ui:84
+msgctxt "shortcut window"
+msgid "Previous"
+msgstr "წინა"
+
+#: data/resources/ui/window.ui:13
+msgid "Camera"
+msgstr "კამერა"
+
+#: data/resources/ui/window.ui:21
+msgid "Gallery"
+msgstr "გალერეა"
+
+#. TRANSLATORS This is the image format presented in the preferences
+#. window.
+#: src/enums.rs:27
+msgid "JPEG"
+msgstr "JPEG"
+
+#. TRANSLATORS Do NOT translate {date}. This will appear as, e.g. "Photo
+#. from 2023-05-21 11-05-59.12345" and it will be used as a file name.
+#: src/utils.rs:22
+msgid "Photo from {date}"
+msgstr "სურათის თარიღი {date}"
+
+#. TRANSLATORS Do NOT translate {number}. This will appear as, e.g.
+#. "Photo 12345" and it will be used as a file name.
+#: src/utils.rs:27
+msgid "Photo {number}"
+msgstr "ფოტო {number}"
+
+#. TRANSLATORS Do NOT translate {date}. This will appear as, e.g.
+#. "Recording from 2023-05-21 11-05-59.12345" and it will be used as a
+#. file name.
+#: src/utils.rs:40
+msgid "Recording from {date}"
+msgstr "ჩანაწერის დრო {date}"
+
+#. TRANSLATORS Do NOT translate {number}. This will appear as, e.g.
+#. "Recording 12345" and it will be used as a file name.
+#: src/utils.rs:45
+msgid "Recording {number}"
+msgstr "ჩანაწერი {number}"
+
+#: src/widgets/camera.rs:416
+msgid "Could not play camera stream"
+msgstr "კამერის ვიდეონაკადის დაკვრის შეცდომა"
+
+#: src/widgets/gallery.rs:117
+msgid "Open in Video Player"
+msgstr "ვიდეოდამკვრელით გახსნა"
+
+#: src/widgets/gallery.rs:383
+msgid "Copied to clipboard"
+msgstr "დაკოპირდა გაცვლის ბაფერში"
+
+#: src/widgets/gallery.rs:431
+msgid "Picture deleted"
+msgstr "სურათი წაიშალა"
+
+#: src/widgets/gallery.rs:433
+msgid "Video deleted"
+msgstr "ვიდეო წაიშალა"
+
+#: src/widgets/gallery.rs:448
+msgid "_Copy Picture"
+msgstr "სურათის _კოპირება"
+
+#: src/widgets/gallery.rs:450
+msgid "_Copy Video"
+msgstr "ვიდეოს _კოპირება"
+
+#: src/widgets/gallery.rs:452
+msgid "_Delete"
+msgstr "_წაშლა"
+
+#: src/widgets/shutter_button.rs:81
+msgid "Start Recording"
+msgstr "ჩაწერის დაწყება"
+
+#: src/widgets/shutter_button.rs:92
+msgid "Stop Recording"
+msgstr "ჩაწერის გაჩერება"
+
+#: src/widgets/window.rs:74 src/widgets/window.rs:310
+msgid "Could not take picture"
+msgstr "სურათის გადაღება შეუძლებელია"
+
+#: src/widgets/window.rs:78 src/widgets/window.rs:314
+msgid "Could not record video"
+msgstr "ვიდეოს ჩაწერა შეუძლებელია"
+
+#: src/widgets/window.rs:266
+msgid "translator-credits"
+msgstr "თემური დოღონაძე"
+
+#~ msgid "Back"
+#~ msgstr "უკან"
+
+#~ msgid "Photo"
+#~ msgstr "სურათი"
+
+#~ msgid "Recording"
+#~ msgstr "ჩანაწერი"
+
+#~ msgid "Maximiliano Sandoval"
+#~ msgstr "Maximiliano Sandoval"
+
+#~ msgid "Picture Format"
+#~ msgstr "სურათის ფორმატი"
+
+#~ msgid "PNG"
+#~ msgstr "PNG"
