@@ -1,0 +1,410 @@
+#
+# lumingzh <lumingzh@qq.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kgx master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/console/issues\n"
+"POT-Creation-Date: 2023-02-12 12:31+0000\n"
+"PO-Revision-Date: 2023-02-24 15:51+0800\n"
+"Last-Translator: lumingzh <lumingzh@qq.com>\n"
+"Language-Team: Chinese - China <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: data/org.gnome.Console.desktop.in.in:3
+#: data/org.gnome.Console.metainfo.xml.in.in:8 src/kgx-application.h:29
+msgid "Console"
+msgstr "控制台"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Console.desktop.in.in:8
+msgid "command;prompt;cmd;commandline;run;shell;terminal;kgx;kings cross;"
+msgstr ""
+"command;prompt;cmd;commandline;run;shell;terminal;kgx;kings cross;命令;提示"
+"符;命令行;运行;终端;"
+
+#: data/org.gnome.Console.desktop.in.in:21
+msgid "New Window"
+msgstr "新建窗口"
+
+#: data/org.gnome.Console.desktop.in.in:27 src/kgx-window.ui:143
+msgid "New Tab"
+msgstr "新建标签页"
+
+#: data/org.gnome.Console.metainfo.xml.in.in:9 src/kgx-application.c:366
+msgid "Terminal Emulator"
+msgstr "终端模拟器"
+
+#: data/org.gnome.Console.metainfo.xml.in.in:11
+msgid "A simple user-friendly terminal emulator for the GNOME desktop."
+msgstr "GNOME 桌面的简单、用户友好的终端模拟器。"
+
+#: data/org.gnome.Console.metainfo.xml.in.in:30
+msgid "Terminal window"
+msgstr "终端窗口"
+
+#: data/org.gnome.Console.metainfo.xml.in.in:210 src/kgx-window.c:436
+msgid "The GNOME Project"
+msgstr "GNOME 项目"
+
+#: src/help-overlay.ui:12
+msgctxt "shortcut window"
+msgid "Application"
+msgstr "应用程序"
+
+#: src/help-overlay.ui:16
+msgctxt "shortcut window"
+msgid "New Window"
+msgstr "新建窗口"
+
+#: src/help-overlay.ui:23
+msgctxt "shortcut window"
+msgid "Terminal"
+msgstr "终端"
+
+#: src/help-overlay.ui:27
+msgctxt "shortcut window"
+msgid "Find"
+msgstr "查找"
+
+#: src/help-overlay.ui:33
+msgctxt "shortcut window"
+msgid "Copy"
+msgstr "复制"
+
+#: src/help-overlay.ui:39
+msgctxt "shortcut window"
+msgid "Paste"
+msgstr "粘贴"
+
+#: src/help-overlay.ui:46
+msgctxt "shortcut window"
+msgid "Tabs"
+msgstr "标签页"
+
+#: src/help-overlay.ui:50
+msgctxt "shortcut window"
+msgid "New Tab"
+msgstr "新建标签页"
+
+#: src/help-overlay.ui:56
+msgctxt "shortcut window"
+msgid "Close Tab"
+msgstr "关闭标签页"
+
+#: src/help-overlay.ui:62
+msgctxt "shortcut window"
+msgid "Show All Tabs"
+msgstr "显示所有标签页"
+
+#: src/help-overlay.ui:68
+msgctxt "shortcut window"
+msgid "Next Tab"
+msgstr "下一个标签页"
+
+#: src/help-overlay.ui:74
+msgctxt "shortcut window"
+msgid "Previous Tab"
+msgstr "上一个标签页"
+
+#: src/help-overlay.ui:80
+msgctxt "shortcut window"
+msgid "Switch to Tab"
+msgstr "切换到标签页"
+
+#: src/kgx-application.c:241
+msgid "Cannot use both --command and positional parameters"
+msgstr "无法同时使用 --命令 和位置参数"
+
+#. Translators: The leading # is intentional, the initial %s is the
+#. version of KGX itself, the latter format is the VTE version
+#: src/kgx-application.c:338
+#, c-format
+msgid "# KGX %s using VTE %u.%u.%u %s\n"
+msgstr "# KGX %s 使用 VTE %u.%u.%u %s\n"
+
+#. Translators: %s is the year range
+#: src/kgx-application.c:350 src/kgx-window.c:431
+#, c-format
+msgid "© %s Zander Brown"
+msgstr "© %s Zander Brown"
+
+#: src/kgx-application.c:364 src/kgx-window.ui:55
+msgid "King’s Cross"
+msgstr "King’s Cross"
+
+#: src/kgx-application.c:368
+msgid "GPL 3.0 or later"
+msgstr "GPL 3.0 或更高版本"
+
+#: src/kgx-application.c:433
+msgid "Execute the argument to this option inside the terminal"
+msgstr "在终端内执行此选项的参数"
+
+#: src/kgx-application.c:434
+msgid "COMMAND"
+msgstr "命令"
+
+#: src/kgx-application.c:442
+msgid "Set the working directory"
+msgstr "设置工作目录"
+
+#. Translators: Placeholder of for a given directory
+#: src/kgx-application.c:444
+msgid "DIRNAME"
+msgstr "目录名称"
+
+#: src/kgx-application.c:452
+msgid "Wait until the child exits (TODO)"
+msgstr "等待子命令退出 (TODO)"
+
+#: src/kgx-application.c:461
+msgid "Set the initial window title"
+msgstr "设置初始窗口标题"
+
+#: src/kgx-application.c:462
+msgid "TITLE"
+msgstr "标题"
+
+#: src/kgx-application.c:470
+msgid "ADVANCED: Set the shell to launch"
+msgstr "高级：设置要启动的 shell"
+
+#: src/kgx-application.c:471
+msgid "SHELL"
+msgstr "SHELL"
+
+#: src/kgx-application.c:479
+msgid "ADVANCED: Set the scrollback length"
+msgstr "高级：设置回滚长度"
+
+#: src/kgx-application.c:480
+msgid "LINES"
+msgstr "行数"
+
+#: src/kgx-application.c:489
+msgid "[-e|-- COMMAND [ARGUMENT...]]"
+msgstr "[-e|-- 命令 [变量...]]"
+
+#: src/kgx-close-dialog.c:50
+msgid "Close Window?"
+msgstr "关闭窗口？"
+
+#: src/kgx-close-dialog.c:51
+msgid ""
+"Some commands are still running, closing this window will kill them and may "
+"lead to unexpected outcomes"
+msgstr "某些命令仍在运行，关闭此窗口会将其杀死并可能导致意外结果"
+
+#: src/kgx-close-dialog.c:56
+msgid "Close Tab?"
+msgstr "关闭标签页？"
+
+#: src/kgx-close-dialog.c:57
+msgid ""
+"Some commands are still running, closing this tab will kill them and may "
+"lead to unexpected outcomes"
+msgstr "某些命令仍在运行，关闭此标签页会将其杀死并可能导致意外结果"
+
+#: src/kgx-close-dialog.ui:18 src/kgx-terminal.c:877
+msgid "_Cancel"
+msgstr "取消(_C)"
+
+#: src/kgx-close-dialog.ui:19
+msgid "C_lose"
+msgstr "关闭(_L)"
+
+#: src/kgx-pages.ui:61
+msgid "_Detach Tab"
+msgstr "分离标签页(_D)"
+
+#: src/kgx-pages.ui:67
+msgid "_Close"
+msgstr "关闭(_C)"
+
+#. translators: <b> </b> marks the text as bold, ensure they are
+#. matched please!
+#: src/kgx-simple-tab.c:168
+#, c-format
+msgid "<b>Read Only</b> — Command exited with code %i"
+msgstr "<b>只读</b> — 命令已退出，代码为 %i"
+
+#. translators: <b> </b> marks the text as bold, ensure they are
+#. matched please!
+#: src/kgx-simple-tab.c:177
+msgid "<b>Read Only</b> — Command exited"
+msgstr "<b>只读</b> — 命令已退出"
+
+#. translators: <b> </b> marks the text as bold, ensure they are
+#. matched please!
+#: src/kgx-simple-tab.c:210
+#, c-format
+msgid "<b>Failed to start</b> — %s"
+msgstr "<b>启动失败</b> — %s"
+
+#: src/kgx-tab.c:993
+msgid "Command completed"
+msgstr "命令已完成"
+
+#: src/kgx-tab.ui:22
+msgid "Find text"
+msgstr "查找文本"
+
+#: src/kgx-tab.ui:33
+msgid "Previous Match"
+msgstr "上一个"
+
+#: src/kgx-tab.ui:41
+msgid "Next Match"
+msgstr "下一个"
+
+#: src/kgx-terminal.c:870
+msgid "You are pasting a command that runs as an administrator"
+msgstr "您正在粘贴以管理员权限运行的命令"
+
+#. TRANSLATORS: %s is the command being pasted
+#: src/kgx-terminal.c:874
+#, c-format
+msgid ""
+"Make sure you know what the command does:\n"
+"%s"
+msgstr ""
+"确保您知道该命令做了什么：\n"
+"%s"
+
+#: src/kgx-terminal.c:878 src/menus.ui:24
+msgid "_Paste"
+msgstr "粘贴(_P)"
+
+#: src/kgx-theme-switcher.ui:16
+msgid "Use System Colors"
+msgstr "使用系统配色"
+
+#: src/kgx-theme-switcher.ui:44
+msgid "Use Light Colors"
+msgstr "使用亮色配色"
+
+#: src/kgx-theme-switcher.ui:71
+msgid "Use Dark Colors"
+msgstr "使用暗色配色"
+
+#. Translators: Credit yourself here
+#: src/kgx-window.c:442
+msgid "translator-credits"
+msgstr ""
+"Damned <damnedlies@163.com>, 2020.\n"
+"lumingzh <lumingzh@qq.com>, 2022.\n"
+"Victor_Trista <ljlzjzm@hotmail.com>, 2023."
+
+#: src/kgx-window.ui:17
+msgid "_New Window"
+msgstr "新建窗口(_N)"
+
+#: src/kgx-window.ui:23
+msgid "_Show All Tabs"
+msgstr "显示所有标签页(_S)"
+
+#: src/kgx-window.ui:30
+msgid "_Keyboard Shortcuts"
+msgstr "键盘快捷键(_K)"
+
+#: src/kgx-window.ui:34
+msgid "_About Console"
+msgstr "关于控制台(_A)"
+
+#: src/kgx-window.ui:63
+msgid "Find in Terminal"
+msgstr "在终端中查找"
+
+#: src/kgx-window.ui:71
+msgid "Main Menu"
+msgstr "主菜单"
+
+#: src/kgx-window.ui:89
+msgid "Shrink Text"
+msgstr "缩小文本"
+
+#: src/kgx-window.ui:100
+msgid "Reset Size"
+msgstr "重置大小"
+
+#: src/kgx-window.ui:117
+msgid "Enlarge Text"
+msgstr "放大文本"
+
+#: src/menus.ui:7
+msgid "_Open Link"
+msgstr "打开链接(_O)"
+
+#: src/menus.ui:12
+msgid "Copy _Link"
+msgstr "复制链接(_L)"
+
+#: src/menus.ui:19
+msgid "_Copy"
+msgstr "复制(_C)"
+
+#: src/menus.ui:29
+msgid "_Select All"
+msgstr "全选(_S)"
+
+#: src/menus.ui:36
+msgid "Show in _Files"
+msgstr "在文件中显示(_F)"
+
+#~ msgid "View Open Tabs"
+#~ msgstr "查看打开的标签页"
+
+#~ msgid "Zander Brown"
+#~ msgstr "Zander Brown"
+
+#~ msgid "Console (Development)"
+#~ msgstr "控制台（开发版）"
+
+#~ msgid "About this Program"
+#~ msgstr "关于此程序"
+
+#~ msgid "Open in Co_nsole (Devel)"
+#~ msgstr "在控制台中打开（开发）(_N)"
+
+#~ msgid "Open in Co_nsole"
+#~ msgstr "在控制台中打开(_N)"
+
+#~ msgid "Start a terminal session for this location"
+#~ msgstr "为此位置启动终端会话"
+
+#~ msgid "Terminal"
+#~ msgstr "终端"
+
+#~| msgid "Terminal Emulator"
+#~ msgid "KGX Terminal Emulator"
+#~ msgstr "KGX 终端模拟器"
+
+#~ msgid "_About King’s Cross"
+#~ msgstr "关于 King’s Cross(_A)"
+
+#~| msgid "King’s Cross"
+#~ msgid "Op_en in King’s Cross"
+#~ msgstr "在 King’s Cross 中打开(_E)"
+
+#~ msgid "command;prompt;cmd;commandline;run;shell;terminal;kgx;"
+#~ msgstr ""
+#~ "command;prompt;cmd;commandline;run;shell;terminal;kgx;命令;提示符;命令行;"
+#~ "运行;终端;"
+
+#~ msgid "child watcher"
+#~ msgstr "子进程监视"
+
+#~ msgid "Copyright © %s Zander Brown"
+#~ msgstr "版权所有 © %s Zander Brown"
+
+#~ msgid "Terminal (King’s Cross)"
+#~ msgstr "终端（King’s Cross）"
+
+#~ msgid "_OK"
+#~ msgstr "确定(_O)"

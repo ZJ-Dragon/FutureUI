@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="custom">theme-switcher</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="custom">zoom-controls</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_New Window</attribute>
+        <attribute name="action">win.new-window</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Show All Tabs</attribute>
+        <attribute name="action">win.show-tabs-desktop</attribute>
+        <attribute name="hidden-when">action-disabled</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
+        <attribute name="action">win.show-help-overlay</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_About Console</attribute>
+        <attribute name="action">win.about</attribute>
+      </item>
+    </section>
+  </menu>
+  <template class="KgxWindow" parent="AdwApplicationWindow">
+    <signal name="notify::is-active" handler="active_changed" swapped="no"/>
+    <property name="width-request">360</property>
+    <property name="height-request">294</property>
+    <property name="content">
+      <object class="AdwTabOverview" id="tab_overview">
+        <property name="enable-new-tab">True</property>
+        <signal name="create-tab" handler="create_tab_cb" swapped="yes"/>
+        <property name="child">
+          <object class="AdwToolbarView" id="toolbar_view">
+            <style>
+              <class name="main-box"/>
+            </style>
+            <property name="top-bar-style">raised</property>
+            <child type="top">
+              <object class="GtkHeaderBar" id="header_bar">
+                <property name="title-widget">
+                  <object class="AdwWindowTitle" id="window_title">
+                    <property name="title">KGX</property>
+                  </object>
+                </property>
+                <child type="start">
+                  <object class="GtkToggleButton">
+                    <property name="can-focus">0</property>
+                    <property name="receives-default">0</property>
+                    <property name="action-name">win.find</property>
+                    <property name="tooltip-text" translatable="yes">Find in Terminal</property>
+                    <property name="icon-name">edit-find-symbolic</property>
+                  </object>
+                </child>
+                <child type="end">
+                  <object class="GtkMenuButton">
+                    <property name="can-focus">0</property>
+                    <property name="receives-default">1</property>
+                    <property name="tooltip-text" translatable="yes">Main Menu</property>
+                    <property name="icon-name">open-menu-symbolic</property>
+                    <property name="popover">
+                      <object class="GtkPopoverMenu">
+                        <property name="menu-model">primary_menu</property>
+                        <child type="theme-switcher">
+                          <object class="KgxThemeSwitcher" id="theme_switcher"/>
+                        </child>
+                        <child type="zoom-controls">
+                          <object class="GtkBox">
+                            <property name="orientation">horizontal</property>
+                            <property name="homogeneous">True</property>
+                            <property name="margin-top">3</property>
+                            <property name="margin-bottom">3</property>
+                            <child>
+                              <object class="GtkButton">
+                                <property name="action-name">app.zoom-out</property>
+                                <property name="icon-name">zoom-out-symbolic</property>
+                                <property name="tooltip-text" translatable="yes">Shrink Text</property>
+                                <property name="halign">center</property>
+                                <style>
+                                  <class name="circular"/>
+                                  <class name="flat"/>
+                                </style>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkButton">
+                                <property name="action-name">app.zoom-normal</property>
+                                <property name="tooltip-text" translatable="yes">Reset Size</property>
+                                <property name="halign">center</property>
+                                <style>
+                                  <class name="flat"/>
+                                  <class name="numeric"/>
+                                </style>
+                                <child>
+                                  <object class="GtkLabel" id="zoom_level">
+                                    <property name="width_chars">5</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkButton">
+                                <property name="action-name">app.zoom-in</property>
+                                <property name="icon-name">zoom-in-symbolic</property>
+                                <property name="tooltip-text" translatable="yes">Enlarge Text</property>
+                                <property name="halign">center</property>
+                                <style>
+                                  <class name="circular"/>
+                                  <class name="flat"/>
+                                </style>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+                <child type="end">
+                  <object class="AdwTabButton" id="tab_button">
+                    <property name="visible">False</property>
+                    <property name="action-name">win.show-tabs</property>
+                  </object>
+                </child>
+                <child type="end">
+                  <object class="GtkButton" id="new_tab_button">
+                    <property name="can-focus">0</property>
+                    <property name="receives-default">0</property>
+                    <property name="action-name">win.new-tab</property>
+                    <property name="tooltip-text" translatable="yes">New Tab</property>
+                    <property name="icon-name">tab-new-symbolic</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child type="top">
+              <object class="AdwTabBar" id="tab_bar">
+                <signal name="extra-drag-drop" handler="extra_drag_drop" swapped="no"/>
+              </object>
+            </child>
+            <child>
+              <object class="KgxPages" id="pages">
+                <property name="settings" bind-source="KgxWindow" bind-property="settings" bind-flags="sync-create" />
+                <property name="is-active" bind-source="KgxWindow" bind-property="is-active" bind-flags="sync-create" />
+                <signal name="zoom" handler="zoom" swapped="no"/>
+                <signal name="create-tearoff-host" handler="create_tearoff_host" swapped="no"/>
+                <signal name="maybe-close-window" handler="maybe_close_window" swapped="yes"/>
+                <signal name="notify::status" handler="status_changed" swapped="yes" />
+              </object>
+            </child>
+          </object>
+        </property>
+      </object>
+    </property>
+    <child>
+      <object class="AdwBreakpoint">
+        <condition>max-width: 400px</condition>
+        <setter object="tab_button" property="visible">True</setter>
+        <setter object="new_tab_button" property="visible">False</setter>
+        <setter object="tab_bar" property="visible">False</setter>
+        <signal name="apply" handler="breakpoint_applied" swapped="yes"/>
+        <signal name="unapply" handler="breakpoint_unapplied" swapped="yes"/>
+      </object>
+    </child>
+    <style>
+      <class name="terminal-window"/>
+    </style>
+  </template>
+  <object class="GBindingGroup" id="settings_binds">
+    <property name="source" bind-source="KgxWindow" bind-property="settings" bind-flags="sync-create"/>
+  </object>
+</interface>

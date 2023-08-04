@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="@BIN_NAME@">
+  <enum id="@KGX_APPLICATION_ID_RAW@.Theme">
+    <value nick="auto" value="0"/>
+    <value nick="night" value="1"/>
+    <value nick="day" value="2"/>
+    <value nick="hacker" value="3"/>
+  </enum>
+
+  <schema id="@KGX_APPLICATION_ID_RAW@" path="@KGX_APPLICATION_PATH_RAW@">
+    <key name="theme" enum="@KGX_APPLICATION_ID_RAW@.Theme">
+      <default>'night'</default>
+    </key>
+    <key name="font-scale" type="d">
+      <range min="0.5" max="4.0"/>
+      <default>1.0</default>
+    </key>
+    <key name="shell" type="as">
+      <default>[]</default>
+    </key>
+    <key name="scrollback-lines" type="x">
+      <default>10000</default>
+    </key>
+    <key name="last-window-size" type="(ii)">
+      <default>(-1, -1)</default>
+    </key>
+    <key name="restore-window-size" type="b">
+      <default>true</default>
+    </key>
+  </schema>
+</schemalist>

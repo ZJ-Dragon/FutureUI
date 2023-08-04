@@ -1,0 +1,265 @@
+Version 44.0
+~~~~~~~~~~~~
+
+Updated Translations
+ * Russian  (Aleksandr Melman)
+ * Bulgarian  (Alexander Shopov)
+ * Swedish  (Anders Jonsson)
+ * Basque  (Asier Sarasua Garmendia)
+ * Danish  (Ask Hjorth Larsen)
+ * Lithuanian  (Aurimas Černius)
+ * Hungarian  (Balázs Úr)
+ * Chinese (China)  (Boyuan Yang)
+ * Korean  (DaeHyun Sung)
+ * Spanish  (Daniel)
+ * Greek  (Efstathios Iosifidis)
+ * Friulian  (Fabio Tomat)
+ * Galician  (Fran Dieguez)
+ * Hindi  (Hemish)
+ * Portuguese  (Hugo Carvalho)
+ * French  (Irénée THIRION)
+ * Finnish  (Jiri Grönroos)
+ * German  (Jürgen Benvenuti)
+ * Czech  (Marek Černocký)
+ * Slovenian  (Matej Urbančič)
+ * Persian  (MohammadSaleh Kamyab)
+ * Polish  (Piotr Drąg)
+ * Occitan  (Quentin PAGÈS)
+ * Catalan  (Quique Serrano)
+ * Turkish  (Sabri Ünal)
+
+Version 44.beta
+~~~~~~~~~~~~~~~
+
+Alexander Mikhaylenko kept us up to date with libadwaita changes, including
+the new tab overview that replaces the existing mobile switcher, and
+supplements the tab bar.
+
+Cleanups for ‘Find’ were provided by Daniel Christodoulopoulos and
+‘sunflowerskater’, whilst Michel Dänzer and Tomasz Torcz expanded the
+scenarios considered to be ‘remote’ to include mosh and waypipe.
+
+Other assorted fixes were provided by Hari Rana, Jordan Petridis,
+Mazhar Hussain, and Sergio Costas Rodriguez.
+
+Updated Translations:
+ * Belarusian  (Vasil Pupkin)
+ * Friulian  (Fabio Tomat)
+ * Galician  (Fran Dieguez)
+ * Georgian  (Ekaterine Papava)
+ * German  (Jürgen Benvenuti)
+ * Hebrew  (Yosef Or Boczko)
+ * Hindi  (Hemish)
+ * Indonesian  (Kukuh Syafaat)
+ * Interlingue  (Olga Smirnova)
+ * Portuguese  (Hugo Carvalho)
+ * Slovak  (Dušan Kazik)
+ * Turkish  (Emin Tufan Çetin)
+ * Ukrainian  (Yuri Chornoivan)
+
+Version 43.0
+~~~~~~~~~~~~
+
+Updated Translations:
+ * Brazilian Portuguese  (Leônidas Araújo)
+ * Bulgarian  (Alexander Shopov)
+ * Chinese (Taiwan)  (Cheng-Chia Tseng)
+ * Czech  (Marek Černocký)
+ * Georgian  (Zurab Kargareteli)
+ * German  (Christian Kirbach)
+ * Greek  (Efstathios Iosifidis)
+ * Kazakh  (Baurzhan Muftakhidinov)
+ * Korean  (DaeHyun Sung)
+ * Latvian  (Rūdolfs Mazurs)
+ * Lithuanian  (Aurimas Černius)
+ * Nepali  (Pawan Chitrakar)
+ * Russian  (Aleksandr Melman)
+ * Slovenian  (Matej Urbančič)
+ * Swedish  (Luna Jernberg)
+ * Turkish  (Sabri Ünal)
+
+Version 43.rc
+~~~~~~~~~~~~
+
+Take advantage of some newer GLib/GObject features, with a corresponding 
+dependency bump, to simplify some code.
+
+Thanks to Maximiliano we now store the size of the last window, and use it
+for future windows rather than unconditionally using 80×24.
+
+A bug in 43.beta where ‘Show in Files’ was mistakenly unavailable has been
+fixed, as well as a longstanding edge case when a background tab closes.
+
+Updated Translations:
+ * Catalan  (Jordi Mas)
+ * Chinese (China)  (Luming Zh)
+ * Croatian  (Goran Vidović)
+ * Danish  (Ask Hjorth Larsen)
+ * Dutch  (Nathan Follens)
+ * French  (Irénée THIRION)
+ * Galician  (Fran Dieguez)
+ * Hebrew  (Yosef Or Boczko)
+ * Hungarian  (Balázs Úr)
+ * Indonesian  (Kukuh Syafaat)
+ * Occitan  (Quentin PAGÈS)
+ * Polish  (Piotr Drąg)
+ * Spanish  (Daniel Mustieles)
+ * Turkish  (Emin Tufan Çetin)
+
+Version 43.beta
+~~~~~~~~~~~~
+
+Port to Gtk4/Adwaita, taking advantage of Adwaita's recolouring
+features and thus removing our dependency on sassc. We now
+require that Vte is be built with gtk4 support.
+
+Nautilus Plug-in has been moved upstream.
+
+Simon McVittie improved our handeling of custom shells/commands,
+fixing several bugs and providing a more predictable experience.
+
+Colin Kinloch provided fixes for drag-n-drop, with local URIs now
+being converted to regular fileystem paths.
+
+Assorted other fixes were contributed, including detection of man
+page links, keyboard shortcuts, clipboard oddities, building with
+clang, and assorted ancillary data updates.
+
+Updated Translations:
+ * Abkhazian  (Nart Tlisha)
+ * Basque  (Asier Sarasua Garmendia)
+ * Catalan  (Jordi Mas)
+ * Chinese (China)  (Luming Zh)
+ * Dutch  (Hannie Dumoleyn)
+ * French  (Irénée THIRION)
+ * Galician  (Fran Dieguez)
+ * Georgian  (Zurab Kargareteli)
+ * German  (Jürgen Benvenuti)
+ * Hebrew  (Yosef Or Boczko)
+ * Indonesian  (Kukuh Syafaat)
+ * Nepali  (Pawan Chitrakar)
+ * Persian  (Danial Behzadi)
+ * Portuguese  (Hugo Carvalho)
+ * Russian  (Aleksandr Melman)
+ * Serbian  (Марко Костић)
+ * Spanish  (Daniel Mustieles)
+ * Turkish  (Emin Tufan Çetin)
+ * Ukrainian  (Yuri Chornoivan)
+ * Vietnamese  (Ngọc Quân Trần)
+
+Version 42.2
+~~~~~~~~~~~~
+
+ * Fix GCC warning
+ * Check for pcre2 during configure
+
+Version 42.1
+~~~~~~~~~~~~
+
+ * Fixed release notes in metainfo
+
+Version 42.0
+~~~~~~~~~~~~
+
+ * Drop unneeded custom RPATH
+ * Translation updates:
+   * Bulgarian
+   * Catalan
+   * Croatian
+   * Czech
+   * Danish
+   * Dutch
+   * Finnish
+   * French
+   * Friulian
+   * German
+   * Hungarian
+   * Indonesian
+   * Italian
+   * Japanese
+   * Kazakh
+   * Korean
+   * Lithuanian
+   * Nepali
+   * Norwegian Bokmål
+   * Occitan
+   * Persian
+   * Punjabi
+   * Serbian
+   * Slovak
+   * Slovenian
+   * Vietnamese
+
+Version 42.beta
+~~~~~~~~~~~~~~~
+Released: 2022-02-14
+
+KGX now goes by Console and we have restored the legendary ‘Day’ mode
+
+Also in this release:
+ * 👓 Much better High Contrast support
+ * 🔬 Increased Zoom range
+ * 📋 Paste is now less pernickety
+ * 🩹 Fixed a couple leaks and assorted issues
+
+GNOME l10n Teams have updated translations:
+ * Basque
+ * Chinese (China)
+ * Finnish
+ * Galician
+ * Hebrew
+ * Polish
+ * Portuguese
+ * Portuguese (Brazil)
+ * Russian
+ * Slovenian
+ * Spanish
+ * Swedish
+ * Turkish
+ * Ukrainian
+
+Version 0.4.0
+~~~~~~~~~~~~~
+Released: 2021-10-24
+
+More Terminals! KGX can now host multiple sessions per window with nifty tabs on larger screens and
+a neat list for those on the narrower side
+
+Also in this release:
+ * 🎨 Shiny new — yet familiar — icon
+ * 📜 More scrollback
+ * 🔗 Mouse users can ctrl-click links
+ * 🗄️ Handy little Files (Nautilus) extension to launch KGX in a folder
+ * 🤦‍♀️ Assorted bugs have been wrangled and scrolling behaviour (especially on touch) has been
+   improved
+ * 💬 GNOME l10n teams have added many more translations
+ * 🪛 Adventurous users can set a custom shell (such as fish) and tweak the scrollback size
+
+Version 0.2.1
+~~~~~~~~~~~~~
+Released: 2019-10-06
+
+Use HdySearchBar to match the behaviour in other apps.
+
+Improved generic banding (no weird symbols in about dialog).
+
+Translation updates from the wonderful d-l team (except en_GB, that translator seems to have
+dropped the ball....).
+
+Version 0.2.0
+~~~~~~~~~~~~~
+Released: 2019-09-15
+
+Impoved tracking of running commands reducing resource usage, especially when running in the
+background.
+
+Command complete notifications and query close when commands are still running.
+
+Translations for de, en_GB, es, fi, hu, pl & pt_BR from various users on l10n.gnome.org (thanks
+guys!).
+
+Version 0.1.0
+~~~~~~~~~~~~~
+Released: 2019-07-30
+
+The first release of our little terminal emulator with basic functionality.

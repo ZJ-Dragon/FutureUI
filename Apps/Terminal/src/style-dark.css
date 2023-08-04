@@ -1,0 +1,5 @@
+@define-color root_headerbar_bg_color       shade(@red_5, 0.6);
+@define-color root_headerbar_backdrop_color shade(@red_5, 0.45);
+
+@define-color remote_headerbar_bg_color       shade(@purple_5, 0.6);
+@define-color remote_headerbar_backdrop_color shade(@purple_5, 0.45);

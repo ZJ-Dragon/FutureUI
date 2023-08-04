@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="KgxSimpleTab" parent="KgxTab">
+    <property name="terminal">terminal</property>
+    <child type="content">
+      <object class="GtkScrolledWindow">
+        <property name="vexpand">1</property>
+        <property name="propagate-natural-width">1</property>
+        <property name="propagate-natural-height">1</property>
+        <property name="hscrollbar-policy">never</property>
+        <style>
+          <class name="terminal"/>
+        </style>
+        <property name="child">
+          <object class="KgxTerminal" id="terminal">
+            <property name="vexpand">True</property>
+            <property name="allow-hyperlink">True</property>
+            <binding name="settings">
+              <lookup name="settings">KgxSimpleTab</lookup>
+            </binding>
+            <signal name="notify::path" handler="path_changed" swapped="no"/>
+          </object>
+        </property>
+      </object>
+    </child>
+  </template>
+</interface>
