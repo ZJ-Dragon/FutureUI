@@ -1,0 +1,7 @@
+subdir('applications')
+subdir('autostart')
+subdir('dbus')
+subdir('gresource')
+subdir('gschema')
+subdir('icons')
+subdir('metainfo')
