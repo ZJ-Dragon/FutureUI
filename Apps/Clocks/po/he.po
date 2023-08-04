@@ -1,0 +1,775 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Yosef Or Boczko <yoseforb@gmail.com>, 2013-2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-clocks 3.6\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-clocks/issues\n"
+"POT-Creation-Date: 2023-07-04 18:15+0000\n"
+"PO-Revision-Date: 2023-07-06 12:28+0300\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"Language-Team: Hebrew <yoseforb@gmail.com>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3)\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Gtranslator 42.0\n"
+
+#: data/org.gnome.clocks.desktop.in.in:3 data/org.gnome.clocks.desktop.in.in:4
+#: data/org.gnome.clocks.metainfo.xml.in.in:6 data/ui/window.ui:25
+#: src/main.vala:25 src/window.vala:286 src/window.vala:341
+#: src/world-standalone.vala:24
+msgid "Clocks"
+msgstr "שעונים"
+
+#: data/org.gnome.clocks.desktop.in.in:6
+msgid "Clocks for world times, plus alarms, stopwatch and a timer"
+msgstr "שעונים לזמנים שונים ברחבי העולם לרבות התראות, שעון עצר וקוצב זמן"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.clocks.desktop.in.in:8
+msgid "time;timer;alarm;world clock;stopwatch;time zone;"
+msgstr "זמן;שעה;טיימר;קוצב זמן;שעון עולמי;שעון עצר;סטופר;אזור זמן;שעון;"
+
+#: data/org.gnome.clocks.desktop.in.in:18
+msgid "Allows world clocks to be displayed for your time zone."
+msgstr "מאפשר הצגת שעונים מסביב לעולם עבור אזור הזמן שלך."
+
+#: data/org.gnome.clocks.gschema.xml.in:5
+msgid "Configured world clocks"
+msgstr "Configured world clocks"
+
+#: data/org.gnome.clocks.gschema.xml.in:6
+msgid "List of world clocks to show."
+msgstr "List of world clocks to show."
+
+#: data/org.gnome.clocks.gschema.xml.in:12
+msgid "Configured alarms"
+msgstr "Configured alarms"
+
+#: data/org.gnome.clocks.gschema.xml.in:13
+msgid "List of alarms set."
+msgstr "List of alarms set."
+
+#: data/org.gnome.clocks.gschema.xml.in:19
+msgid "Configured Timers"
+msgstr "Configured Timers"
+
+#: data/org.gnome.clocks.gschema.xml.in:20
+msgid "List of timers set."
+msgstr "List of timers set."
+
+#: data/org.gnome.clocks.gschema.xml.in:26
+msgid "Geolocation support"
+msgstr "Geolocation support"
+
+#: data/org.gnome.clocks.gschema.xml.in:27
+msgid "Turn geolocation support on and off."
+msgstr "Turn geolocation support on and off."
+
+#: data/org.gnome.clocks.gschema.xml.in:44
+msgid "Window maximized"
+msgstr "Window maximized"
+
+#: data/org.gnome.clocks.gschema.xml.in:45
+msgid "Whether the window is maximized."
+msgstr "Whether the window is maximized."
+
+#: data/org.gnome.clocks.gschema.xml.in:51
+msgid "Window width and height"
+msgstr "Window width and height"
+
+#: data/org.gnome.clocks.gschema.xml.in:52
+msgid "Width and height of the window."
+msgstr "Width and height of the window."
+
+#: data/org.gnome.clocks.gschema.xml.in:58
+msgid "Panel state"
+msgstr "Panel state"
+
+#: data/org.gnome.clocks.gschema.xml.in:59
+msgid "Current clock panel."
+msgstr "Current clock panel."
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:7
+msgid "Keep track of time"
+msgstr "מעקב אחר זמן"
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:9
+msgid ""
+"A simple and elegant clock application. It includes world clocks, alarms, a "
+"stopwatch, and timers."
+msgstr ""
+"יישום שעונים פשוט ומהודר. הוא כולל שעונים בעולם, התראות, שעון עצר וקוצבי זמן."
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:14
+msgid "Show the time in different cities around the world"
+msgstr "הצגת השעה בערים שונות מסביב לעולם"
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:15
+msgid "Set alarms to wake you up"
+msgstr "הגדרת שעונים מעוררים"
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:16
+msgid "Measure elapsed time with an accurate stopwatch"
+msgstr "מדידת זמן שחלף עם שעון עצר מדויק"
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:17
+msgid "Set timers to properly cook your food"
+msgstr "הגדרת קוצב זמן כדי לבשל את האוכל שלך כמו שצריך"
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:39
+msgid "Initial screen"
+msgstr "מסך פתיחה"
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:43
+msgid "Alarms screen"
+msgstr "מסך התראות"
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:47
+msgid "Stopwatch screen"
+msgstr "מסך שעון עצר"
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:51
+msgid "Timer screen"
+msgstr "מסך קוצב זמן"
+
+#: data/org.gnome.clocks.metainfo.xml.in.in:136 src/window.vala:288
+msgid "The GNOME Project"
+msgstr "מיזם GNOME"
+
+#: data/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "כללי"
+
+#: data/gtk/help-overlay.ui:15
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "הצגת עזרה"
+
+#: data/gtk/help-overlay.ui:21
+msgctxt "shortcut window"
+msgid "Open Menu"
+msgstr "פתיחת תפריט"
+
+#: data/gtk/help-overlay.ui:27
+msgctxt "shortcut window"
+msgid "Keyboard Shortcuts"
+msgstr "צירופי מקשים"
+
+#: data/gtk/help-overlay.ui:33
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "יציאה"
+
+#: data/gtk/help-overlay.ui:39
+msgctxt "shortcut window"
+msgid "Go to the Next Section"
+msgstr "מעבר למסך הבא"
+
+#: data/gtk/help-overlay.ui:45
+msgctxt "shortcut window"
+msgid "Go to the Previous Section"
+msgstr "מעבר למסך הקודם"
+
+#: data/gtk/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Go to the World Section"
+msgstr "מעבר למסך עולם"
+
+#: data/gtk/help-overlay.ui:57
+msgctxt "shortcut window"
+msgid "Go to the Alarms Section"
+msgstr "מעבר למסך התראות"
+
+#: data/gtk/help-overlay.ui:63
+msgctxt "shortcut window"
+msgid "Go to the Stopwatch Section"
+msgstr "מעבר למסך שעון עצר"
+
+#: data/gtk/help-overlay.ui:69
+msgctxt "shortcut window"
+msgid "Go to the Timer Section"
+msgstr "מעבר למסך קוצב זמן"
+
+#: data/gtk/help-overlay.ui:77
+msgctxt "shortcut window"
+msgid "World Clocks"
+msgstr "שעונים מסביב לעולם"
+
+#: data/gtk/help-overlay.ui:81
+msgctxt "shortcut window"
+msgid "Add a World Clock"
+msgstr "הוספת שעון עולמי"
+
+#: data/gtk/help-overlay.ui:89
+msgctxt "shortcut window"
+msgid "Alarm"
+msgstr "התראה"
+
+#: data/gtk/help-overlay.ui:93
+msgctxt "shortcut window"
+msgid "Add an Alarm"
+msgstr "הוספת התראה"
+
+#: data/gtk/help-overlay.ui:101
+msgctxt "shortcut window"
+msgid "Stopwatch"
+msgstr "שעון עצר"
+
+#: data/gtk/help-overlay.ui:105
+msgctxt "shortcut window"
+msgid "Pause All"
+msgstr "השהיית הכל"
+
+#: data/gtk/help-overlay.ui:113
+msgctxt "shortcut window"
+msgid "Timer"
+msgstr "קוצב זמן"
+
+#: data/gtk/help-overlay.ui:117
+msgctxt "shortcut window"
+msgid "Reset"
+msgstr "איפוס"
+
+#: data/gtk/help-overlay.ui:123
+msgctxt "shortcut window"
+msgid "New Timer"
+msgstr "קוצב זמן חדש"
+
+#: data/ui/alarm-day-picker-row.ui:17
+msgid "Repeat"
+msgstr "חזרה"
+
+#: data/ui/alarm-face.ui:14
+msgid "Add A_larm…"
+msgstr "הוספת ה_תראה…"
+
+#: data/ui/alarm-ringing-panel.ui:26 src/alarm-item.vala:128
+msgid "Stop"
+msgstr "עצירה"
+
+#: data/ui/alarm-ringing-panel.ui:41 src/alarm-item.vala:129
+msgid "Snooze"
+msgstr "נודניק"
+
+#: data/ui/alarm-row.ui:47
+msgid "Repeats"
+msgstr "חזרתיות"
+
+#: data/ui/alarm-row.ui:71 data/ui/timer-row.ui:152 data/ui/world-row.ui:19
+msgid "Delete"
+msgstr "מחיקה"
+
+#. Translators: Tooltip for the + button
+#: data/ui/alarm-setup-dialog.ui:8 src/alarm-face.vala:28
+#: src/alarm-setup-dialog.vala:113
+msgid "New Alarm"
+msgstr "התראה חדשה"
+
+#: data/ui/alarm-setup-dialog.ui:27 data/ui/timer-setup-dialog.ui:28
+#: data/ui/world-location-dialog.ui:17
+msgid "_Cancel"
+msgstr "_ביטול"
+
+#: data/ui/alarm-setup-dialog.ui:34 data/ui/timer-setup-dialog.ui:35
+#: data/ui/world-location-dialog.ui:25
+msgid "_Add"
+msgstr "_הוספה"
+
+#: data/ui/alarm-setup-dialog.ui:125
+msgid "Name"
+msgstr "שם"
+
+#: data/ui/alarm-setup-dialog.ui:132
+msgid "Ring Duration"
+msgstr "משך צלצול"
+
+#: data/ui/alarm-setup-dialog.ui:138
+msgid "Snooze Duration"
+msgstr "משך נמנום"
+
+#: data/ui/alarm-setup-dialog.ui:150
+msgid "You already have an alarm for this time."
+msgstr "כבר יש לך התראה לזמן זה."
+
+#: data/ui/alarm-setup-dialog.ui:157
+msgid "R_emove Alarm"
+msgstr "ה_סרת התראה"
+
+#: data/ui/header-bar.ui:6
+msgid "_Keyboard Shortcuts"
+msgstr "_צירופי מקשים"
+
+#: data/ui/header-bar.ui:10
+msgid "_Help"
+msgstr "_עזרה"
+
+#: data/ui/header-bar.ui:14
+msgid "_About Clocks"
+msgstr "_על אודות שעונים"
+
+#: data/ui/header-bar.ui:54
+msgid "Menu"
+msgstr "תפריט"
+
+#: data/ui/header-bar.ui:57
+msgid "Main Menu"
+msgstr "תפריט ראשי"
+
+#: data/ui/stopwatch-face.ui:100
+msgid "_Start"
+msgstr "ה_תחלה"
+
+#: data/ui/stopwatch-face.ui:115 src/stopwatch-face.vala:184
+msgid "Clear"
+msgstr "ניקוי"
+
+#: data/ui/stopwatch-laps-row.ui:14
+msgid "Time"
+msgstr "זמן"
+
+#: data/ui/stopwatch-laps-row.ui:25
+msgid "Difference"
+msgstr "שינוי"
+
+#: data/ui/timer-face.ui:21
+msgid "Select Duration"
+msgstr "בחירת משך"
+
+#: data/ui/timer-row.ui:32
+msgid "Title…"
+msgstr "כותרת…"
+
+#: data/ui/timer-row.ui:74 src/stopwatch-face.vala:164
+msgid "Pause"
+msgstr "השהייה"
+
+#: data/ui/timer-row.ui:92 src/stopwatch-face.vala:201
+msgid "Start"
+msgstr "התחלה"
+
+#: data/ui/timer-row.ui:119
+msgid "Reset"
+msgstr "איפוס"
+
+#. Translators: Tooltip for the + button
+#: data/ui/timer-setup-dialog.ui:6 src/timer-face.vala:39
+msgid "New Timer"
+msgstr "קוצב זמן חדש"
+
+#: data/ui/timer-setup.ui:38
+msgid "1 m"
+msgstr "דקה אחת"
+
+#: data/ui/timer-setup.ui:49
+msgid "2 m"
+msgstr "2 דקות"
+
+#: data/ui/timer-setup.ui:60
+msgid "3 m"
+msgstr "3 דקות"
+
+#: data/ui/timer-setup.ui:71
+msgid "5 m"
+msgstr "4 דקות"
+
+#: data/ui/timer-setup.ui:82
+msgid "30 m"
+msgstr "30 דקות"
+
+#: data/ui/timer-setup.ui:93
+msgid "15 m"
+msgstr "15 דקות"
+
+#: data/ui/timer-setup.ui:104
+msgid "45 m"
+msgstr "45 דקות"
+
+#: data/ui/timer-setup.ui:115
+msgid "1 h"
+msgstr "שעה אחת"
+
+#: data/ui/timer-setup.ui:147 data/ui/timer-setup.ui:179
+#: data/ui/timer-setup.ui:212
+msgid "0"
+msgstr "0"
+
+#: data/ui/window.ui:42
+msgid "_World"
+msgstr "_עולם"
+
+#: data/ui/window.ui:53
+msgid "Ala_rms"
+msgstr "ה_תראה"
+
+#: data/ui/window.ui:64
+msgid "_Stopwatch"
+msgstr "שעון _עצר"
+
+#: data/ui/window.ui:75
+msgid "_Timer"
+msgstr "_קוצב זמן"
+
+#: data/ui/window.ui:96
+msgid "Clock"
+msgstr "שעון"
+
+#: data/ui/window.ui:104
+msgid "Alarm Ringing"
+msgstr "צליל התראה"
+
+#: data/ui/world-face.ui:15
+msgid "_Add World Clock…"
+msgstr "הו_ספת שעון עולמי…"
+
+#: data/ui/world-location-dialog.ui:4
+msgid "Add a New World Clock"
+msgstr "הוספת שעון עולמי חדש"
+
+#: data/ui/world-location-dialog.ui:53
+msgid "Search for a City"
+msgstr "חיפוש אחר עיר"
+
+#: data/ui/world-standalone.ui:97
+msgid "Sunrise"
+msgstr "זריחה"
+
+#: data/ui/world-standalone.ui:109
+msgid "Sunset"
+msgstr "שקיעה"
+
+#. Prior to 3.36 unamed alarms would just be called "Alarm",
+#. pretend alarms called "Alarm" don't have a name (of course
+#. this fails if the language/translation has since changed)
+#: src/alarm-item.vala:125 src/alarm-row.vala:94 src/window.vala:337
+msgid "Alarm"
+msgstr "התראה"
+
+#. Translators: The alarm for the time %s titled %s has been "snoozed"
+#: src/alarm-row.vala:101
+#, c-format
+msgid "Snoozed from %s: %s"
+msgstr "נמנום מ־%s: ‏%s"
+
+#. Translators: %s is a time
+#: src/alarm-row.vala:104
+#, c-format
+msgid "Snoozed from %s"
+msgstr "נמנום מ־%s"
+
+#: src/alarm-setup-dialog.vala:41
+msgid "1 minute"
+msgstr "דקה"
+
+#: src/alarm-setup-dialog.vala:42
+msgid "5 minutes"
+msgstr "5 דקות"
+
+#: src/alarm-setup-dialog.vala:43
+msgid "10 minutes"
+msgstr "10 דקות"
+
+#: src/alarm-setup-dialog.vala:44
+msgid "15 minutes"
+msgstr "רבע שעה"
+
+#: src/alarm-setup-dialog.vala:45
+msgid "20 minutes"
+msgstr "20 דקות"
+
+#: src/alarm-setup-dialog.vala:46
+msgid "30 minutes"
+msgstr "חצי שעה"
+
+#: src/alarm-setup-dialog.vala:113
+msgid "Edit Alarm"
+msgstr "עריכת התראה"
+
+#: src/alarm-setup-dialog.vala:116
+msgid "_Done"
+msgstr "_בוצע"
+
+#: src/application.vala:23
+msgid "Print version information and exit"
+msgstr "Print version information and exit"
+
+#: src/stopwatch-face.vala:168 src/stopwatch-face.vala:205
+msgid "Lap"
+msgstr "הקפה"
+
+#: src/stopwatch-face.vala:180
+msgid "Resume"
+msgstr "המשך"
+
+#: src/stopwatch-laps-row.vala:48
+#, c-format
+msgid "Lap %i"
+msgstr "סיבוב %i"
+
+#: src/timer-face.vala:76
+msgid "Time is up!"
+msgstr "נגמר הזמן!"
+
+#: src/timer-face.vala:77
+msgid "Timer countdown finished"
+msgstr "הספירה לאחור הסתיימה"
+
+#. Translators: The time is the same as the local time
+#: src/utils.vala:61
+msgid "Current timezone"
+msgstr "אזור זמן נוכחי"
+
+# msgid_plural "%s hours earlier"
+#. Translators: The (possibly fractical) number hours in the past
+#. (relative to local) the clock/location is
+#: src/utils.vala:66
+#, c-format
+msgid "%s hour behind"
+msgid_plural "%s hours behind"
+msgstr[0] "שעה מוקדם יותר"
+msgstr[1] "שעתיים מוקדם יותר"
+msgstr[2] "‏%s שעות מוקדם יותר"
+msgstr[3] "‏%s שעות מוקדם יותר"
+
+# msgid_plural "%s hours later"
+#. Translators: The (possibly fractical) number hours in the
+#. future (relative to local) the clock/location is
+#: src/utils.vala:72
+#, c-format
+msgid "%s hour ahead"
+msgid_plural "%s hours ahead"
+msgstr[0] "שעה מאוחר יותר"
+msgstr[1] "שעתיים מאוחר יותר"
+msgstr[2] "‏%s שעות מאוחר יותר"
+msgstr[3] "‏%s שעות מאוחר יותר"
+
+#. Translators: This is used in the repeat toggle for Monday
+#: src/utils.vala:189
+msgctxt "Alarm|Repeat-On|Monday"
+msgid "M"
+msgstr "ב"
+
+#. Translators: This is used in the repeat toggle for Tuesday
+#: src/utils.vala:191
+msgctxt "Alarm|Repeat-On|Tuesday"
+msgid "T"
+msgstr "ג"
+
+#. Translators: This is used in the repeat toggle for Wednesday
+#: src/utils.vala:193
+msgctxt "Alarm|Repeat-On|Wednesday"
+msgid "W"
+msgstr "ד"
+
+#. Translators: This is used in the repeat toggle for Thursday
+#: src/utils.vala:195
+msgctxt "Alarm|Repeat-On|Thursday"
+msgid "T"
+msgstr "ה"
+
+#. Translators: This is used in the repeat toggle for Friday
+#: src/utils.vala:197
+msgctxt "Alarm|Repeat-On|Friday"
+msgid "F"
+msgstr "ו"
+
+#. Translators: This is used in the repeat toggle for Saturday
+#: src/utils.vala:199
+msgctxt "Alarm|Repeat-On|Saturday"
+msgid "S"
+msgstr "ש"
+
+#. Translators: This is used in the repeat toggle for Sunday
+#: src/utils.vala:201
+msgctxt "Alarm|Repeat-On|Sunday"
+msgid "S"
+msgstr "א"
+
+#: src/utils.vala:215
+msgid "Mondays"
+msgstr "ימי שני"
+
+#: src/utils.vala:216
+msgid "Tuesdays"
+msgstr "ימי שלישי"
+
+#: src/utils.vala:217
+msgid "Wednesdays"
+msgstr "ימי רביעי"
+
+#: src/utils.vala:218
+msgid "Thursdays"
+msgstr "ימי חמישי"
+
+#: src/utils.vala:219
+msgid "Fridays"
+msgstr "ימי שישי"
+
+#: src/utils.vala:220
+msgid "Saturdays"
+msgstr "שבתות"
+
+#: src/utils.vala:221
+msgid "Sundays"
+msgstr "ימי ראשון"
+
+#: src/utils.vala:347
+msgid "Every Day"
+msgstr "כל יום"
+
+#: src/utils.vala:349
+msgid "Weekdays"
+msgstr "בימי השבוע"
+
+#: src/utils.vala:351
+msgid "Weekends"
+msgstr "סופי שבוע"
+
+#: src/window.vala:294
+msgid "translator-credits"
+msgstr ""
+"ירון שהרבני <sh.yaron@gmail.com>\n"
+"יוסף אור בוצ׳קו <yoseforb@gmail.com>\n"
+"מיזם תרגום GNOME לעברית https://l10n.gnome.org/teams/he/"
+
+#. Translators: Tooltip for the + button
+#: src/world-face.vala:29
+msgid "Add Location"
+msgstr "הוספת מיקום"
+
+#. If it is Jan 1st there, and not Jan 2nd here, then it must be
+#. Dec 31st here, so return "tomorrow"
+#: src/world-item.vala:177 src/world-item.vala:181
+msgid "Tomorrow"
+msgstr "מחר"
+
+#. If it is Jan 1st here, and not Jan 2nd there, then it must be
+#. Dec 31st there, so return "yesterday"
+#: src/world-item.vala:177 src/world-item.vala:181
+msgid "Yesterday"
+msgstr "אתמול"
+
+#. Translators: This clock represents the local time
+#: src/world-row.vala:47
+msgid "Current location"
+msgstr "מיקום נוכחי"
+
+#~ msgid "Back"
+#~ msgstr "אחורה"
+
+#~ msgid "Cancel"
+#~ msgstr "ביטול"
+
+#~ msgid "Done"
+#~ msgstr "בוצע"
+
+#~ msgid "Add"
+#~ msgstr "הוספה"
+
+#~ msgid "Active"
+#~ msgstr "פעיל"
+
+#~ msgid "Alarms"
+#~ msgstr "התראות"
+
+#~ msgid "Goals:"
+#~ msgstr "מטרות:"
+
+#~ msgid "Alarms setup"
+#~ msgstr "הגדרת התראות"
+
+#~ msgid "Optional"
+#~ msgstr "אפשרי"
+
+#~ msgid "Utilities to help you with the time."
+#~ msgstr "עזרים כדי לסייע לך בניהול זמנים."
+
+#~ msgid "GNOME Clocks"
+#~ msgstr "שעונים מבית GNOME"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Keyboard shortcuts"
+#~ msgstr "צירופי מקשים"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Add a world clock"
+#~ msgstr "הוספת שעולם מסביב לעולם חדש"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Stop / Reset"
+#~ msgstr "עצירה / איפוס"
+
+#~ msgid "Failed to show help: %s"
+#~ msgstr "נכשלה הצגת עזרה: %s"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Select all world clocks"
+#~ msgstr "בחירת כל השעונים מסביב לעולם"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Select all alarms"
+#~ msgstr "בחירת כל ההתראות"
+
+#~ msgid "_About"
+#~ msgstr "על _אודות"
+
+#~ msgid "_Quit"
+#~ msgstr "י_ציאה"
+
+#~ msgid "Select All"
+#~ msgstr "בחירת הכול"
+
+#~ msgid "org.gnome.clocks"
+#~ msgstr "org.gnome.clocks"
+
+#~ msgid "Configured timer duration in seconds."
+#~ msgstr "Configured timer duration in seconds."
+
+#~ msgid "Select <b>New</b> to add an alarm"
+#~ msgstr "יש לבחור ב<b>חדש</b> כדי להוסיף התראה"
+
+#~ msgid "Select <b>New</b> to add a world clock"
+#~ msgstr "יש לבחור ב<b>חדש</b> כדי להוסיף שעון עולמי"
+
+#~ msgid "New"
+#~ msgstr "חדש"
+
+#~ msgid "Continue"
+#~ msgstr "המשך"
+
+#~ msgid "Click on items to select them"
+#~ msgstr "יש ללחוץ על פריטים כדי לבחור בהם"
+
+#~ msgid "%d selected"
+#~ msgid_plural "%d selected"
+#~ msgstr[0] "נבחר פריט אחד"
+#~ msgstr[1] "%d נבחרו"
+
+#~ msgid "_New"
+#~ msgstr "_חדש"
+
+#~ msgid "Split"
+#~ msgstr "פיצול"
+
+#~ msgid "Total"
+#~ msgstr "סך הכול"
+
+#~ msgid ":"
+#~ msgstr ":"
+
+#~ msgid "  "
+#~ msgstr "  "
+
+#~ msgid "label"
+#~ msgstr "תווית"
+
+#~ msgid "Edit"
+#~ msgstr "עריכה"
