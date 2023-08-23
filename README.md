@@ -4,7 +4,7 @@ A UI and apps for [DragonOS](https://github.com/ZJ-Dragon/DragonOS).
 
 ---
 
-Version: FutureUI 3.0.23601.1037
+Version: FutureUI 3.0.23822.1052
 
 ---
 
